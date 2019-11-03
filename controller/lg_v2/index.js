@@ -5,7 +5,7 @@ const data_search_ctrl = require('./data_search.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 // 종성 컨트롤러
-// const data_search_ctrl = require('./data_search.ctrl')
+const overview_ctrl = require('./overview.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
@@ -38,7 +38,7 @@ router.post('/data_search', data_search_ctrl.data_search)
 
 
 // 종성이
-
+router.post('/v2/overview', overview_ctrl.overview)
 
 
 
