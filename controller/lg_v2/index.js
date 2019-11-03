@@ -41,7 +41,7 @@ router.get('/graph/items',graph_ctrl.get_item_list)
 router.post('/overview', overview_ctrl.overview)
 router.post('/login', login_ctrl.login)
 router.post('/chamber/recent_test', chamber_ctrl.recent_test)
-router.post('/chamber/chamber_status', chamber_ctrl.chamber_status())
+router.post('/chamber/chamber_status', chamber_ctrl.chamber_status)
 
 
 
