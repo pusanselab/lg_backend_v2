@@ -1,2 +1,2 @@
 // admin
-app.use('/api1', require('../controller/lg_v2'))
+app.use('/api', require('../controller/lg_v2'))
