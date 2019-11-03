@@ -9,10 +9,9 @@ const syncDb = require('./sync_db.js')
 
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
-
 syncDb().then(_ => {
     console.log("syncDb completed")
-    app.listen( _ => {
+    app.listen(port, _ => {
         console.log("server is running")
     })
 })

@@ -1,6 +1,7 @@
 const sequelize = require('sequelize');
 
 const overview = (req, res) => {
+    console.log("hello")
     const result = {
         content: {
             model: [
