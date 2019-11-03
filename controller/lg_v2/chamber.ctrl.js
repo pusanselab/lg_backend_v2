@@ -12,11 +12,9 @@ const recent_test = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else {
-            console.log(header)
             result.content = header
             result.code = 200
             result.message = "success"
-            console.log(result)
             return res.json(result)
         }
     })

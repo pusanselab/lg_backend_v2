@@ -51,5 +51,9 @@ db.Header.hasMany(db.Raw_4, {foreignKey: 'header_uid', constraints: false, sourc
 // db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
 
 
+db.Header.hasMany(db.Item, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
 
 module.exports = db;

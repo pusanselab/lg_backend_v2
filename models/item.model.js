@@ -5,7 +5,7 @@ module.exports = (Sequelize, sequelize) => {
                 primaryKey: true,
                 autoIncrement: true
             },
-            headerUid: {
+            header_uid: {
                 type: Sequelize.INTEGER
             },
             item: {
