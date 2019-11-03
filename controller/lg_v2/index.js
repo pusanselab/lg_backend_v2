@@ -22,7 +22,7 @@ router.post('/user/create', admin_ctrl.create_user)
 router.post('/data/delete', admin_ctrl.delete_header_data)
 router.post('/data_search_id', data_search_ctrl.data_search_id)
 router.post('/data_search', data_search_ctrl.data_search)
-
+// router.post('/data_search', data_search_ctrl.data_search)
 
 
 
