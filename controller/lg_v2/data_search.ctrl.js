@@ -1,15 +1,23 @@
 const data_search_id = (req, res) => {
     const uid = req.body.header_uid;
-
+    const result = {}
     db.Header.findByPk(uid).then(header => {
-        return res.json(header)
+        if (header) {
+            result.message = "success"
+            result.content = header
+            return res.json(result)
+        }
+        else
+            result.message = "fail"
+            result.content = header
+            return res.json(result)
     })
 }
 
 
 const data_search = (req, res) => {
     console.log("hello")
-    return res.json({"msg":"hello"})
+    return res.json({"msg": "hello"})
     // const lgmv_model_filter1 = req.body.lgmv_model_filter1
     // const lgmv_model_filter2 = req.body.lgmv_model_filter2
     // const lgmv_model_name = req.body.lgmv_model_name
