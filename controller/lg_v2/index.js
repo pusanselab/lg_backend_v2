@@ -41,7 +41,7 @@ router.post('/data_search_detail', data_search_ctrl.data_search_detail)
 router.post('/overview', overview_ctrl.overview)
 router.post('/login', login_ctrl.login)
 router.post('/chamber/recent_test', chamber_ctrl.recent_test)
-
+router.post('/chamber/chamber_status', chamber_ctrl.chamber_status())
 
 
 
