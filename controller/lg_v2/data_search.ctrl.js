@@ -8,28 +8,7 @@ const data_search_id = (req, res) => {
             header_uid: uid
         }
     }).then(header => {
-        db.Calorimeter.findOne({
-            where: {
-                header_uid: uid
-            },
-            attributes: [
-                [sequelize.fn('count', sequelize.col('calorimeter_uid')), 'count']
-            ],
-        }).then(Calorimeter => {
-            if (header == null) {
-                result.code = 400
-                result.message = "failure"
-                return res.json(result)
-            } else {
-                console.log(Calorimeter)
-                console.log(header.dataValues)
-                result.content = header.dataValues
-                result.count = Calorimeter.dataValues.count
-                result.code = 200
-                result.message = "success"
-                return res.json(result)
-            }
-        })
+        return res.json(header)
     })
 }
 
