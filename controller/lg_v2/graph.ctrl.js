@@ -1,5 +1,5 @@
 const get_item_list = (req, res) => {
-    const header_uid = req.query.header_uid
+    const header_uid = req.body.header_uid
 
     db.Item.findAll({
         where: {
