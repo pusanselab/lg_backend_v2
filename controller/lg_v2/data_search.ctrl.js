@@ -1,13 +1,7 @@
 const data_search_id = (req, res) => {
     const uid = req.body.header_uid;
 
-    const result = {};
-
-    db.Header.findOne({
-        where: {
-            header_uid: uid
-        }
-    }).then(header => {
+    db.Header.findByPk(uid).then(header => {
         return res.json(header)
     })
 }
