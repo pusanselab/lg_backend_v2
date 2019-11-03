@@ -39,7 +39,7 @@ router.post('/data_search', data_search_ctrl.data_search)
 
 // 종성이
 router.post('/v2/overview', overview_ctrl.overview)
-
+router.post('/v2/e', overview_ctrl.overview)
 
 
 
