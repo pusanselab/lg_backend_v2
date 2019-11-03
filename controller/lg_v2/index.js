@@ -7,7 +7,7 @@ const data_search_ctrl = require('./data_search.ctrl')
 // 종성 컨트롤러
 const overview_ctrl = require('./overview.ctrl')
 const login_ctrl = require('./login.ctrl')
-// const data_search_ctrl = require('./data_search.ctrl')
+const chamber_ctrl = require('./chamber.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 const router = express.Router()
@@ -40,7 +40,7 @@ router.post('/data_search_detail', data_search_ctrl.data_search_detail)
 // 종성이
 router.post('/overview', overview_ctrl.overview)
 router.post('/login', login_ctrl.login)
-
+router.post('/chamber/recent_test', chamber_ctrl.recent_test)
 
 
 
