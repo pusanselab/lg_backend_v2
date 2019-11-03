@@ -13,7 +13,7 @@ const sequelize = new Sequelize(
     {
         host: host,
         dialect: 'mysql',
-        logging: false,
+        logging: true,
         dialectOptions: {
             // useUTC: false, //for reading from database
             // dateStrings: true,
