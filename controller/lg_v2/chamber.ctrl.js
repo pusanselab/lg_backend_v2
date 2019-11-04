@@ -35,7 +35,7 @@ const chamber_status = (req, res) => {
         order: [
             ['lgmv_date', 'DESC']
         ],
-        attributes:[ 'conn_file_date' ]
+
     }).then(header => {
         if (header.length == null) {
             result.code = 400
