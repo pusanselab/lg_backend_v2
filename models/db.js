@@ -13,13 +13,14 @@ const sequelize = new Sequelize(
     {
         host: host,
         dialect: 'mysql',
-        logging: true,
+        logging: false,
+        connectTimeout: 20000,
         dialectOptions: {
             // useUTC: false, //for reading from database
             // dateStrings: true,
             // typeCast: true
         },
-        timezone: '+09:00' //for writing to database
+        timezone: '+09:00', //for writing to database
     }
 )
 

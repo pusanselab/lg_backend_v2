@@ -16,6 +16,7 @@ const data_search_id = (req, res) => {
 
 
 const data_search = (req, res) => {
+    const header_uid = req.body.header_uid
     const lgmv_model_filter1 = req.body.lgmv_model_filter1
     const lgmv_model_filter2 = req.body.lgmv_model_filter2
     const lgmv_model_name = req.body.lgmv_model_name
@@ -46,7 +47,7 @@ const data_search = (req, res) => {
     const query = {}
 
     function execption_checker(input) {
-        if (input == "" || input == undefined) {
+        if (input == "" || input == undefined || input == null) {
             return false
         }
         else {
@@ -54,6 +55,9 @@ const data_search = (req, res) => {
         }
     }
 
+    if (execption_checker(header_uid)) {
+        query.header_uid = header_uid
+    }
     if (execption_checker(lgmv_model_filter1)) {
         query.lgmv_model_filter1 = lgmv_model_filter1
     }
@@ -129,7 +133,7 @@ const data_search = (req, res) => {
     if (execption_checker(conn_operation_rate)) {
         query.conn_operation_rate = conn_operation_rate
     }
-
+    console.log(query)
     db.Header.findAll({
         where: query
     }).then(header => {
