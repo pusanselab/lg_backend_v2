@@ -1,13 +1,15 @@
 
 
 const session = (req, res) => {
-    console.log("hello")
-    let session = true
+    const result = {
+        session : true
+    }
     if(!req.session.user){
-        session = false
+        result.session = false
     }
 
-    return res.json(session)
+    console.log(result)
+    return res.json(result)
 }
 
 module.exports = { session }
