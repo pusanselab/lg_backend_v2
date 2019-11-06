@@ -2,8 +2,6 @@ const sequelize = require('sequelize');
 
 const overview = (req, res) => {
 
-
-    console.log("hello")
     const result = {
         content: {
             model: [
@@ -14,13 +12,7 @@ const overview = (req, res) => {
             ]
         },
     };
-
-
-    if(!req.session.user){
-        console.log("이쪽으로 들어오노?")
-        result.session = false;
-    }
-
+    
     db.Header.findOne({
         where: {
             lgmv_model_filter1: 'Multi V H/P'
