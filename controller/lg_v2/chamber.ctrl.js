@@ -46,7 +46,6 @@ const chamber_status = (req, res) => {
             for(var i = 0 ; i < header.length ; i++){
                 var data_date = header[i].dataValues.conn_file_date;
                 data_date = data_date.replace(/\./g,'-')
-                console.log(data_date)
                 var between = moment(date).diff(data_date, "month")
 
                 if( between < 6 ){
