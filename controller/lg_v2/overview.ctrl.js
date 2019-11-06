@@ -12,7 +12,8 @@ const overview = (req, res) => {
             ]
         },
     };
-    
+    console.log(req.session)
+
     db.Header.findOne({
         where: {
             lgmv_model_filter1: 'Multi V H/P'
