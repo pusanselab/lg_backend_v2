@@ -165,7 +165,7 @@ const data_search_detail = (req, res) => {
 
     const result = {
         summary : {},
-        similar_test : {}
+        content : {}
     };
 
     // 냉방 성능 확인  -> LG 에서 max 값이 여러개일 때 어떻게 할 것인지 알려주면 추후 작업 할 것임.
@@ -205,13 +205,13 @@ const data_search_detail = (req, res) => {
         }
     }).then(header => {
         if (header.length == 0) {
-            result.similar_test.code = 400
-            result.similar_test.message = "failure"
+            result.content.code = 400
+            result.content.message = "failure"
             return res.json(result)
         } else {
-            result.similar_test.code = 200
-            result.similar_test.message = "success"
-            result.similar_test.header = header
+            result.content.code = 200
+            result.content.message = "success"
+            result.content.header = header
             return res.json(result)
         }
     })
