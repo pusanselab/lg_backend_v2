@@ -1,3 +1,5 @@
+
+
 const login = (req, res) => {
     const Id = req.body.user_id;
     const Pwd = req.body.user_pwd;
@@ -16,6 +18,15 @@ const login = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else if (user.pwd === Pwd) {
+            req.session.user = {
+                id: user.id,
+                pw: user.pwd,
+                name: 'Testing',
+                authorized: true,
+                cookie: {
+                    maxAge: 1000 * 10 // 쿠키 유효기간 1시간
+                }
+            };
             result.code = 200
             result.message = "success"
             return res.json(result)

@@ -1,6 +1,8 @@
 const sequelize = require('sequelize');
 
 const overview = (req, res) => {
+
+
     console.log("hello")
     const result = {
         content: {
@@ -10,8 +12,14 @@ const overview = (req, res) => {
             test: [
                 {}, {}, {}, {}, {}, {}
             ]
-        }
+        },
     };
+
+
+    if(!req.session.user){
+        console.log("이쪽으로 들어오노?")
+        result.session = false;
+    }
 
     db.Header.findOne({
         where: {

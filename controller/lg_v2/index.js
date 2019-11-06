@@ -2,7 +2,7 @@
 const admin_ctrl = require('./admin.ctrl')
 const data_search_ctrl = require('./data_search.ctrl')
 const graph_ctrl = require('./graph.ctrl')
-// const data_search_ctrl = require('./data_search.ctrl')
+const session_ctrl = require('./session.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 // 종성 컨트롤러
 const overview_ctrl = require('./overview.ctrl')
@@ -42,7 +42,7 @@ router.post('/overview', overview_ctrl.overview)
 router.post('/login', login_ctrl.login)
 router.post('/chamber/recent_test', chamber_ctrl.recent_test)
 router.post('/chamber/chamber_status', chamber_ctrl.chamber_status)
-
+router.post('/session', session_ctrl.session)
 
 
 
