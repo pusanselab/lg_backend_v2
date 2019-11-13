@@ -1,6 +1,6 @@
 module.exports = (Sequelize, sequelize) => {
-    return sequelize.define('Raw_3', {
-            raw3Uid: {
+    return sequelize.define('Raw_2001_2500', {
+            rawUid: {
                 type: Sequelize.INTEGER,
                 primaryKey: true,
                 autoIncrement: true
@@ -9,1011 +9,1012 @@ module.exports = (Sequelize, sequelize) => {
                 type: Sequelize.INTEGER
             },
             Date: {
-                type: Sequelize.STRING
+                type: Sequelize.TEXT
             },
             Time: {
-                type: Sequelize.STRING
+                type: Sequelize.TEXT
             },
             item_2001: {type: Sequelize.TEXT},
+
             item_2002: {type: Sequelize.TEXT},
+
             item_2003: {type: Sequelize.TEXT},
+
             item_2004: {type: Sequelize.TEXT},
+
             item_2005: {type: Sequelize.TEXT},
+
             item_2006: {type: Sequelize.TEXT},
+
             item_2007: {type: Sequelize.TEXT},
+
             item_2008: {type: Sequelize.TEXT},
+
             item_2009: {type: Sequelize.TEXT},
+
             item_2010: {type: Sequelize.TEXT},
+
             item_2011: {type: Sequelize.TEXT},
+
             item_2012: {type: Sequelize.TEXT},
+
             item_2013: {type: Sequelize.TEXT},
+
             item_2014: {type: Sequelize.TEXT},
+
             item_2015: {type: Sequelize.TEXT},
+
             item_2016: {type: Sequelize.TEXT},
+
             item_2017: {type: Sequelize.TEXT},
+
             item_2018: {type: Sequelize.TEXT},
+
             item_2019: {type: Sequelize.TEXT},
+
             item_2020: {type: Sequelize.TEXT},
+
             item_2021: {type: Sequelize.TEXT},
+
             item_2022: {type: Sequelize.TEXT},
+
             item_2023: {type: Sequelize.TEXT},
+
             item_2024: {type: Sequelize.TEXT},
+
             item_2025: {type: Sequelize.TEXT},
+
             item_2026: {type: Sequelize.TEXT},
+
             item_2027: {type: Sequelize.TEXT},
+
             item_2028: {type: Sequelize.TEXT},
+
             item_2029: {type: Sequelize.TEXT},
+
             item_2030: {type: Sequelize.TEXT},
+
             item_2031: {type: Sequelize.TEXT},
+
             item_2032: {type: Sequelize.TEXT},
+
             item_2033: {type: Sequelize.TEXT},
+
             item_2034: {type: Sequelize.TEXT},
+
             item_2035: {type: Sequelize.TEXT},
+
             item_2036: {type: Sequelize.TEXT},
+
             item_2037: {type: Sequelize.TEXT},
+
             item_2038: {type: Sequelize.TEXT},
+
             item_2039: {type: Sequelize.TEXT},
+
             item_2040: {type: Sequelize.TEXT},
+
             item_2041: {type: Sequelize.TEXT},
+
             item_2042: {type: Sequelize.TEXT},
+
             item_2043: {type: Sequelize.TEXT},
+
             item_2044: {type: Sequelize.TEXT},
+
             item_2045: {type: Sequelize.TEXT},
+
             item_2046: {type: Sequelize.TEXT},
+
             item_2047: {type: Sequelize.TEXT},
+
             item_2048: {type: Sequelize.TEXT},
+
             item_2049: {type: Sequelize.TEXT},
+
             item_2050: {type: Sequelize.TEXT},
+
             item_2051: {type: Sequelize.TEXT},
+
             item_2052: {type: Sequelize.TEXT},
+
             item_2053: {type: Sequelize.TEXT},
+
             item_2054: {type: Sequelize.TEXT},
+
             item_2055: {type: Sequelize.TEXT},
+
             item_2056: {type: Sequelize.TEXT},
+
             item_2057: {type: Sequelize.TEXT},
+
             item_2058: {type: Sequelize.TEXT},
+
             item_2059: {type: Sequelize.TEXT},
+
             item_2060: {type: Sequelize.TEXT},
+
             item_2061: {type: Sequelize.TEXT},
+
             item_2062: {type: Sequelize.TEXT},
+
             item_2063: {type: Sequelize.TEXT},
+
             item_2064: {type: Sequelize.TEXT},
+
             item_2065: {type: Sequelize.TEXT},
+
             item_2066: {type: Sequelize.TEXT},
+
             item_2067: {type: Sequelize.TEXT},
+
             item_2068: {type: Sequelize.TEXT},
+
             item_2069: {type: Sequelize.TEXT},
+
             item_2070: {type: Sequelize.TEXT},
+
             item_2071: {type: Sequelize.TEXT},
+
             item_2072: {type: Sequelize.TEXT},
+
             item_2073: {type: Sequelize.TEXT},
+
             item_2074: {type: Sequelize.TEXT},
+
             item_2075: {type: Sequelize.TEXT},
+
             item_2076: {type: Sequelize.TEXT},
+
             item_2077: {type: Sequelize.TEXT},
+
             item_2078: {type: Sequelize.TEXT},
+
             item_2079: {type: Sequelize.TEXT},
+
             item_2080: {type: Sequelize.TEXT},
+
             item_2081: {type: Sequelize.TEXT},
+
             item_2082: {type: Sequelize.TEXT},
+
             item_2083: {type: Sequelize.TEXT},
+
             item_2084: {type: Sequelize.TEXT},
+
             item_2085: {type: Sequelize.TEXT},
+
             item_2086: {type: Sequelize.TEXT},
+
             item_2087: {type: Sequelize.TEXT},
+
             item_2088: {type: Sequelize.TEXT},
+
             item_2089: {type: Sequelize.TEXT},
+
             item_2090: {type: Sequelize.TEXT},
+
             item_2091: {type: Sequelize.TEXT},
+
             item_2092: {type: Sequelize.TEXT},
+
             item_2093: {type: Sequelize.TEXT},
+
             item_2094: {type: Sequelize.TEXT},
+
             item_2095: {type: Sequelize.TEXT},
+
             item_2096: {type: Sequelize.TEXT},
+
             item_2097: {type: Sequelize.TEXT},
+
             item_2098: {type: Sequelize.TEXT},
+
             item_2099: {type: Sequelize.TEXT},
+
             item_2100: {type: Sequelize.TEXT},
+
             item_2101: {type: Sequelize.TEXT},
+
             item_2102: {type: Sequelize.TEXT},
+
             item_2103: {type: Sequelize.TEXT},
+
             item_2104: {type: Sequelize.TEXT},
+
             item_2105: {type: Sequelize.TEXT},
+
             item_2106: {type: Sequelize.TEXT},
+
             item_2107: {type: Sequelize.TEXT},
+
             item_2108: {type: Sequelize.TEXT},
+
             item_2109: {type: Sequelize.TEXT},
+
             item_2110: {type: Sequelize.TEXT},
+
             item_2111: {type: Sequelize.TEXT},
+
             item_2112: {type: Sequelize.TEXT},
+
             item_2113: {type: Sequelize.TEXT},
+
             item_2114: {type: Sequelize.TEXT},
+
             item_2115: {type: Sequelize.TEXT},
+
             item_2116: {type: Sequelize.TEXT},
+
             item_2117: {type: Sequelize.TEXT},
+
             item_2118: {type: Sequelize.TEXT},
+
             item_2119: {type: Sequelize.TEXT},
+
             item_2120: {type: Sequelize.TEXT},
+
             item_2121: {type: Sequelize.TEXT},
+
             item_2122: {type: Sequelize.TEXT},
+
             item_2123: {type: Sequelize.TEXT},
+
             item_2124: {type: Sequelize.TEXT},
+
             item_2125: {type: Sequelize.TEXT},
+
             item_2126: {type: Sequelize.TEXT},
+
             item_2127: {type: Sequelize.TEXT},
+
             item_2128: {type: Sequelize.TEXT},
+
             item_2129: {type: Sequelize.TEXT},
+
             item_2130: {type: Sequelize.TEXT},
+
             item_2131: {type: Sequelize.TEXT},
+
             item_2132: {type: Sequelize.TEXT},
+
             item_2133: {type: Sequelize.TEXT},
+
             item_2134: {type: Sequelize.TEXT},
+
             item_2135: {type: Sequelize.TEXT},
+
             item_2136: {type: Sequelize.TEXT},
+
             item_2137: {type: Sequelize.TEXT},
+
             item_2138: {type: Sequelize.TEXT},
+
             item_2139: {type: Sequelize.TEXT},
+
             item_2140: {type: Sequelize.TEXT},
+
             item_2141: {type: Sequelize.TEXT},
+
             item_2142: {type: Sequelize.TEXT},
+
             item_2143: {type: Sequelize.TEXT},
+
             item_2144: {type: Sequelize.TEXT},
+
             item_2145: {type: Sequelize.TEXT},
+
             item_2146: {type: Sequelize.TEXT},
+
             item_2147: {type: Sequelize.TEXT},
+
             item_2148: {type: Sequelize.TEXT},
+
             item_2149: {type: Sequelize.TEXT},
+
             item_2150: {type: Sequelize.TEXT},
+
             item_2151: {type: Sequelize.TEXT},
+
             item_2152: {type: Sequelize.TEXT},
+
             item_2153: {type: Sequelize.TEXT},
+
             item_2154: {type: Sequelize.TEXT},
+
             item_2155: {type: Sequelize.TEXT},
+
             item_2156: {type: Sequelize.TEXT},
+
             item_2157: {type: Sequelize.TEXT},
+
             item_2158: {type: Sequelize.TEXT},
+
             item_2159: {type: Sequelize.TEXT},
+
             item_2160: {type: Sequelize.TEXT},
+
             item_2161: {type: Sequelize.TEXT},
+
             item_2162: {type: Sequelize.TEXT},
+
             item_2163: {type: Sequelize.TEXT},
+
             item_2164: {type: Sequelize.TEXT},
+
             item_2165: {type: Sequelize.TEXT},
+
             item_2166: {type: Sequelize.TEXT},
+
             item_2167: {type: Sequelize.TEXT},
+
             item_2168: {type: Sequelize.TEXT},
+
             item_2169: {type: Sequelize.TEXT},
+
             item_2170: {type: Sequelize.TEXT},
+
             item_2171: {type: Sequelize.TEXT},
+
             item_2172: {type: Sequelize.TEXT},
+
             item_2173: {type: Sequelize.TEXT},
+
             item_2174: {type: Sequelize.TEXT},
+
             item_2175: {type: Sequelize.TEXT},
+
             item_2176: {type: Sequelize.TEXT},
+
             item_2177: {type: Sequelize.TEXT},
+
             item_2178: {type: Sequelize.TEXT},
+
             item_2179: {type: Sequelize.TEXT},
+
             item_2180: {type: Sequelize.TEXT},
+
             item_2181: {type: Sequelize.TEXT},
+
             item_2182: {type: Sequelize.TEXT},
+
             item_2183: {type: Sequelize.TEXT},
+
             item_2184: {type: Sequelize.TEXT},
+
             item_2185: {type: Sequelize.TEXT},
+
             item_2186: {type: Sequelize.TEXT},
+
             item_2187: {type: Sequelize.TEXT},
+
             item_2188: {type: Sequelize.TEXT},
+
             item_2189: {type: Sequelize.TEXT},
+
             item_2190: {type: Sequelize.TEXT},
+
             item_2191: {type: Sequelize.TEXT},
+
             item_2192: {type: Sequelize.TEXT},
+
             item_2193: {type: Sequelize.TEXT},
+
             item_2194: {type: Sequelize.TEXT},
+
             item_2195: {type: Sequelize.TEXT},
+
             item_2196: {type: Sequelize.TEXT},
+
             item_2197: {type: Sequelize.TEXT},
+
             item_2198: {type: Sequelize.TEXT},
+
             item_2199: {type: Sequelize.TEXT},
+
             item_2200: {type: Sequelize.TEXT},
+
             item_2201: {type: Sequelize.TEXT},
+
             item_2202: {type: Sequelize.TEXT},
+
             item_2203: {type: Sequelize.TEXT},
+
             item_2204: {type: Sequelize.TEXT},
+
             item_2205: {type: Sequelize.TEXT},
+
             item_2206: {type: Sequelize.TEXT},
+
             item_2207: {type: Sequelize.TEXT},
+
             item_2208: {type: Sequelize.TEXT},
+
             item_2209: {type: Sequelize.TEXT},
+
             item_2210: {type: Sequelize.TEXT},
+
             item_2211: {type: Sequelize.TEXT},
+
             item_2212: {type: Sequelize.TEXT},
+
             item_2213: {type: Sequelize.TEXT},
+
             item_2214: {type: Sequelize.TEXT},
+
             item_2215: {type: Sequelize.TEXT},
+
             item_2216: {type: Sequelize.TEXT},
+
             item_2217: {type: Sequelize.TEXT},
+
             item_2218: {type: Sequelize.TEXT},
+
             item_2219: {type: Sequelize.TEXT},
+
             item_2220: {type: Sequelize.TEXT},
+
             item_2221: {type: Sequelize.TEXT},
+
             item_2222: {type: Sequelize.TEXT},
+
             item_2223: {type: Sequelize.TEXT},
+
             item_2224: {type: Sequelize.TEXT},
+
             item_2225: {type: Sequelize.TEXT},
+
             item_2226: {type: Sequelize.TEXT},
+
             item_2227: {type: Sequelize.TEXT},
+
             item_2228: {type: Sequelize.TEXT},
+
             item_2229: {type: Sequelize.TEXT},
+
             item_2230: {type: Sequelize.TEXT},
+
             item_2231: {type: Sequelize.TEXT},
+
             item_2232: {type: Sequelize.TEXT},
+
             item_2233: {type: Sequelize.TEXT},
+
             item_2234: {type: Sequelize.TEXT},
+
             item_2235: {type: Sequelize.TEXT},
+
             item_2236: {type: Sequelize.TEXT},
+
             item_2237: {type: Sequelize.TEXT},
+
             item_2238: {type: Sequelize.TEXT},
+
             item_2239: {type: Sequelize.TEXT},
+
             item_2240: {type: Sequelize.TEXT},
+
             item_2241: {type: Sequelize.TEXT},
+
             item_2242: {type: Sequelize.TEXT},
+
             item_2243: {type: Sequelize.TEXT},
+
             item_2244: {type: Sequelize.TEXT},
+
             item_2245: {type: Sequelize.TEXT},
+
             item_2246: {type: Sequelize.TEXT},
+
             item_2247: {type: Sequelize.TEXT},
+
             item_2248: {type: Sequelize.TEXT},
+
             item_2249: {type: Sequelize.TEXT},
+
             item_2250: {type: Sequelize.TEXT},
+
             item_2251: {type: Sequelize.TEXT},
+
             item_2252: {type: Sequelize.TEXT},
+
             item_2253: {type: Sequelize.TEXT},
+
             item_2254: {type: Sequelize.TEXT},
+
             item_2255: {type: Sequelize.TEXT},
+
             item_2256: {type: Sequelize.TEXT},
+
             item_2257: {type: Sequelize.TEXT},
+
             item_2258: {type: Sequelize.TEXT},
+
             item_2259: {type: Sequelize.TEXT},
+
             item_2260: {type: Sequelize.TEXT},
+
             item_2261: {type: Sequelize.TEXT},
+
             item_2262: {type: Sequelize.TEXT},
+
             item_2263: {type: Sequelize.TEXT},
+
             item_2264: {type: Sequelize.TEXT},
+
             item_2265: {type: Sequelize.TEXT},
+
             item_2266: {type: Sequelize.TEXT},
+
             item_2267: {type: Sequelize.TEXT},
+
             item_2268: {type: Sequelize.TEXT},
+
             item_2269: {type: Sequelize.TEXT},
+
             item_2270: {type: Sequelize.TEXT},
+
             item_2271: {type: Sequelize.TEXT},
+
             item_2272: {type: Sequelize.TEXT},
+
             item_2273: {type: Sequelize.TEXT},
+
             item_2274: {type: Sequelize.TEXT},
+
             item_2275: {type: Sequelize.TEXT},
+
             item_2276: {type: Sequelize.TEXT},
+
             item_2277: {type: Sequelize.TEXT},
+
             item_2278: {type: Sequelize.TEXT},
+
             item_2279: {type: Sequelize.TEXT},
+
             item_2280: {type: Sequelize.TEXT},
+
             item_2281: {type: Sequelize.TEXT},
+
             item_2282: {type: Sequelize.TEXT},
+
             item_2283: {type: Sequelize.TEXT},
+
             item_2284: {type: Sequelize.TEXT},
+
             item_2285: {type: Sequelize.TEXT},
+
             item_2286: {type: Sequelize.TEXT},
+
             item_2287: {type: Sequelize.TEXT},
+
             item_2288: {type: Sequelize.TEXT},
+
             item_2289: {type: Sequelize.TEXT},
+
             item_2290: {type: Sequelize.TEXT},
+
             item_2291: {type: Sequelize.TEXT},
+
             item_2292: {type: Sequelize.TEXT},
+
             item_2293: {type: Sequelize.TEXT},
+
             item_2294: {type: Sequelize.TEXT},
+
             item_2295: {type: Sequelize.TEXT},
+
             item_2296: {type: Sequelize.TEXT},
+
             item_2297: {type: Sequelize.TEXT},
+
             item_2298: {type: Sequelize.TEXT},
+
             item_2299: {type: Sequelize.TEXT},
+
             item_2300: {type: Sequelize.TEXT},
+
             item_2301: {type: Sequelize.TEXT},
+
             item_2302: {type: Sequelize.TEXT},
+
             item_2303: {type: Sequelize.TEXT},
+
             item_2304: {type: Sequelize.TEXT},
+
             item_2305: {type: Sequelize.TEXT},
+
             item_2306: {type: Sequelize.TEXT},
+
             item_2307: {type: Sequelize.TEXT},
+
             item_2308: {type: Sequelize.TEXT},
+
             item_2309: {type: Sequelize.TEXT},
+
             item_2310: {type: Sequelize.TEXT},
+
             item_2311: {type: Sequelize.TEXT},
+
             item_2312: {type: Sequelize.TEXT},
+
             item_2313: {type: Sequelize.TEXT},
+
             item_2314: {type: Sequelize.TEXT},
+
             item_2315: {type: Sequelize.TEXT},
+
             item_2316: {type: Sequelize.TEXT},
+
             item_2317: {type: Sequelize.TEXT},
+
             item_2318: {type: Sequelize.TEXT},
+
             item_2319: {type: Sequelize.TEXT},
+
             item_2320: {type: Sequelize.TEXT},
+
             item_2321: {type: Sequelize.TEXT},
+
             item_2322: {type: Sequelize.TEXT},
+
             item_2323: {type: Sequelize.TEXT},
+
             item_2324: {type: Sequelize.TEXT},
+
             item_2325: {type: Sequelize.TEXT},
+
             item_2326: {type: Sequelize.TEXT},
+
             item_2327: {type: Sequelize.TEXT},
+
             item_2328: {type: Sequelize.TEXT},
+
             item_2329: {type: Sequelize.TEXT},
+
             item_2330: {type: Sequelize.TEXT},
+
             item_2331: {type: Sequelize.TEXT},
+
             item_2332: {type: Sequelize.TEXT},
+
             item_2333: {type: Sequelize.TEXT},
+
             item_2334: {type: Sequelize.TEXT},
+
             item_2335: {type: Sequelize.TEXT},
+
             item_2336: {type: Sequelize.TEXT},
+
             item_2337: {type: Sequelize.TEXT},
+
             item_2338: {type: Sequelize.TEXT},
+
             item_2339: {type: Sequelize.TEXT},
+
             item_2340: {type: Sequelize.TEXT},
+
             item_2341: {type: Sequelize.TEXT},
+
             item_2342: {type: Sequelize.TEXT},
+
             item_2343: {type: Sequelize.TEXT},
+
             item_2344: {type: Sequelize.TEXT},
+
             item_2345: {type: Sequelize.TEXT},
+
             item_2346: {type: Sequelize.TEXT},
+
             item_2347: {type: Sequelize.TEXT},
+
             item_2348: {type: Sequelize.TEXT},
+
             item_2349: {type: Sequelize.TEXT},
+
             item_2350: {type: Sequelize.TEXT},
+
             item_2351: {type: Sequelize.TEXT},
+
             item_2352: {type: Sequelize.TEXT},
+
             item_2353: {type: Sequelize.TEXT},
+
             item_2354: {type: Sequelize.TEXT},
+
             item_2355: {type: Sequelize.TEXT},
+
             item_2356: {type: Sequelize.TEXT},
+
             item_2357: {type: Sequelize.TEXT},
+
             item_2358: {type: Sequelize.TEXT},
+
             item_2359: {type: Sequelize.TEXT},
+
             item_2360: {type: Sequelize.TEXT},
+
             item_2361: {type: Sequelize.TEXT},
+
             item_2362: {type: Sequelize.TEXT},
+
             item_2363: {type: Sequelize.TEXT},
+
             item_2364: {type: Sequelize.TEXT},
+
             item_2365: {type: Sequelize.TEXT},
+
             item_2366: {type: Sequelize.TEXT},
+
             item_2367: {type: Sequelize.TEXT},
+
             item_2368: {type: Sequelize.TEXT},
+
             item_2369: {type: Sequelize.TEXT},
+
             item_2370: {type: Sequelize.TEXT},
+
             item_2371: {type: Sequelize.TEXT},
+
             item_2372: {type: Sequelize.TEXT},
+
             item_2373: {type: Sequelize.TEXT},
+
             item_2374: {type: Sequelize.TEXT},
+
             item_2375: {type: Sequelize.TEXT},
+
             item_2376: {type: Sequelize.TEXT},
+
             item_2377: {type: Sequelize.TEXT},
+
             item_2378: {type: Sequelize.TEXT},
+
             item_2379: {type: Sequelize.TEXT},
+
             item_2380: {type: Sequelize.TEXT},
+
             item_2381: {type: Sequelize.TEXT},
+
             item_2382: {type: Sequelize.TEXT},
+
             item_2383: {type: Sequelize.TEXT},
+
             item_2384: {type: Sequelize.TEXT},
+
             item_2385: {type: Sequelize.TEXT},
+
             item_2386: {type: Sequelize.TEXT},
+
             item_2387: {type: Sequelize.TEXT},
+
             item_2388: {type: Sequelize.TEXT},
+
             item_2389: {type: Sequelize.TEXT},
+
             item_2390: {type: Sequelize.TEXT},
+
             item_2391: {type: Sequelize.TEXT},
+
             item_2392: {type: Sequelize.TEXT},
+
             item_2393: {type: Sequelize.TEXT},
+
             item_2394: {type: Sequelize.TEXT},
+
             item_2395: {type: Sequelize.TEXT},
+
             item_2396: {type: Sequelize.TEXT},
+
             item_2397: {type: Sequelize.TEXT},
+
             item_2398: {type: Sequelize.TEXT},
+
             item_2399: {type: Sequelize.TEXT},
+
             item_2400: {type: Sequelize.TEXT},
+
             item_2401: {type: Sequelize.TEXT},
+
             item_2402: {type: Sequelize.TEXT},
+
             item_2403: {type: Sequelize.TEXT},
+
             item_2404: {type: Sequelize.TEXT},
+
             item_2405: {type: Sequelize.TEXT},
+
             item_2406: {type: Sequelize.TEXT},
+
             item_2407: {type: Sequelize.TEXT},
+
             item_2408: {type: Sequelize.TEXT},
+
             item_2409: {type: Sequelize.TEXT},
+
             item_2410: {type: Sequelize.TEXT},
+
             item_2411: {type: Sequelize.TEXT},
+
             item_2412: {type: Sequelize.TEXT},
+
             item_2413: {type: Sequelize.TEXT},
+
             item_2414: {type: Sequelize.TEXT},
+
             item_2415: {type: Sequelize.TEXT},
+
             item_2416: {type: Sequelize.TEXT},
+
             item_2417: {type: Sequelize.TEXT},
+
             item_2418: {type: Sequelize.TEXT},
+
             item_2419: {type: Sequelize.TEXT},
+
             item_2420: {type: Sequelize.TEXT},
+
             item_2421: {type: Sequelize.TEXT},
+
             item_2422: {type: Sequelize.TEXT},
+
             item_2423: {type: Sequelize.TEXT},
+
             item_2424: {type: Sequelize.TEXT},
+
             item_2425: {type: Sequelize.TEXT},
+
             item_2426: {type: Sequelize.TEXT},
+
             item_2427: {type: Sequelize.TEXT},
+
             item_2428: {type: Sequelize.TEXT},
+
             item_2429: {type: Sequelize.TEXT},
+
             item_2430: {type: Sequelize.TEXT},
+
             item_2431: {type: Sequelize.TEXT},
+
             item_2432: {type: Sequelize.TEXT},
+
             item_2433: {type: Sequelize.TEXT},
+
             item_2434: {type: Sequelize.TEXT},
+
             item_2435: {type: Sequelize.TEXT},
+
             item_2436: {type: Sequelize.TEXT},
+
             item_2437: {type: Sequelize.TEXT},
+
             item_2438: {type: Sequelize.TEXT},
+
             item_2439: {type: Sequelize.TEXT},
+
             item_2440: {type: Sequelize.TEXT},
+
             item_2441: {type: Sequelize.TEXT},
+
             item_2442: {type: Sequelize.TEXT},
+
             item_2443: {type: Sequelize.TEXT},
+
             item_2444: {type: Sequelize.TEXT},
+
             item_2445: {type: Sequelize.TEXT},
+
             item_2446: {type: Sequelize.TEXT},
+
             item_2447: {type: Sequelize.TEXT},
+
             item_2448: {type: Sequelize.TEXT},
+
             item_2449: {type: Sequelize.TEXT},
+
             item_2450: {type: Sequelize.TEXT},
+
             item_2451: {type: Sequelize.TEXT},
+
             item_2452: {type: Sequelize.TEXT},
+
             item_2453: {type: Sequelize.TEXT},
+
             item_2454: {type: Sequelize.TEXT},
+
             item_2455: {type: Sequelize.TEXT},
+
             item_2456: {type: Sequelize.TEXT},
+
             item_2457: {type: Sequelize.TEXT},
+
             item_2458: {type: Sequelize.TEXT},
+
             item_2459: {type: Sequelize.TEXT},
+
             item_2460: {type: Sequelize.TEXT},
+
             item_2461: {type: Sequelize.TEXT},
+
             item_2462: {type: Sequelize.TEXT},
+
             item_2463: {type: Sequelize.TEXT},
+
             item_2464: {type: Sequelize.TEXT},
+
             item_2465: {type: Sequelize.TEXT},
+
             item_2466: {type: Sequelize.TEXT},
+
             item_2467: {type: Sequelize.TEXT},
+
             item_2468: {type: Sequelize.TEXT},
+
             item_2469: {type: Sequelize.TEXT},
+
             item_2470: {type: Sequelize.TEXT},
+
             item_2471: {type: Sequelize.TEXT},
+
             item_2472: {type: Sequelize.TEXT},
+
             item_2473: {type: Sequelize.TEXT},
+
             item_2474: {type: Sequelize.TEXT},
+
             item_2475: {type: Sequelize.TEXT},
+
             item_2476: {type: Sequelize.TEXT},
+
             item_2477: {type: Sequelize.TEXT},
+
             item_2478: {type: Sequelize.TEXT},
+
             item_2479: {type: Sequelize.TEXT},
+
             item_2480: {type: Sequelize.TEXT},
+
             item_2481: {type: Sequelize.TEXT},
+
             item_2482: {type: Sequelize.TEXT},
+
             item_2483: {type: Sequelize.TEXT},
+
             item_2484: {type: Sequelize.TEXT},
+
             item_2485: {type: Sequelize.TEXT},
+
             item_2486: {type: Sequelize.TEXT},
+
             item_2487: {type: Sequelize.TEXT},
+
             item_2488: {type: Sequelize.TEXT},
+
             item_2489: {type: Sequelize.TEXT},
+
             item_2490: {type: Sequelize.TEXT},
+
             item_2491: {type: Sequelize.TEXT},
+
             item_2492: {type: Sequelize.TEXT},
+
             item_2493: {type: Sequelize.TEXT},
+
             item_2494: {type: Sequelize.TEXT},
+
             item_2495: {type: Sequelize.TEXT},
+
             item_2496: {type: Sequelize.TEXT},
+
             item_2497: {type: Sequelize.TEXT},
+
             item_2498: {type: Sequelize.TEXT},
+
             item_2499: {type: Sequelize.TEXT},
+
             item_2500: {type: Sequelize.TEXT},
-            item_2501: {type: Sequelize.TEXT},
-            item_2502: {type: Sequelize.TEXT},
-            item_2503: {type: Sequelize.TEXT},
-            item_2504: {type: Sequelize.TEXT},
-            item_2505: {type: Sequelize.TEXT},
-            item_2506: {type: Sequelize.TEXT},
-            item_2507: {type: Sequelize.TEXT},
-            item_2508: {type: Sequelize.TEXT},
-            item_2509: {type: Sequelize.TEXT},
-            item_2510: {type: Sequelize.TEXT},
-            item_2511: {type: Sequelize.TEXT},
-            item_2512: {type: Sequelize.TEXT},
-            item_2513: {type: Sequelize.TEXT},
-            item_2514: {type: Sequelize.TEXT},
-            item_2515: {type: Sequelize.TEXT},
-            item_2516: {type: Sequelize.TEXT},
-            item_2517: {type: Sequelize.TEXT},
-            item_2518: {type: Sequelize.TEXT},
-            item_2519: {type: Sequelize.TEXT},
-            item_2520: {type: Sequelize.TEXT},
-            item_2521: {type: Sequelize.TEXT},
-            item_2522: {type: Sequelize.TEXT},
-            item_2523: {type: Sequelize.TEXT},
-            item_2524: {type: Sequelize.TEXT},
-            item_2525: {type: Sequelize.TEXT},
-            item_2526: {type: Sequelize.TEXT},
-            item_2527: {type: Sequelize.TEXT},
-            item_2528: {type: Sequelize.TEXT},
-            item_2529: {type: Sequelize.TEXT},
-            item_2530: {type: Sequelize.TEXT},
-            item_2531: {type: Sequelize.TEXT},
-            item_2532: {type: Sequelize.TEXT},
-            item_2533: {type: Sequelize.TEXT},
-            item_2534: {type: Sequelize.TEXT},
-            item_2535: {type: Sequelize.TEXT},
-            item_2536: {type: Sequelize.TEXT},
-            item_2537: {type: Sequelize.TEXT},
-            item_2538: {type: Sequelize.TEXT},
-            item_2539: {type: Sequelize.TEXT},
-            item_2540: {type: Sequelize.TEXT},
-            item_2541: {type: Sequelize.TEXT},
-            item_2542: {type: Sequelize.TEXT},
-            item_2543: {type: Sequelize.TEXT},
-            item_2544: {type: Sequelize.TEXT},
-            item_2545: {type: Sequelize.TEXT},
-            item_2546: {type: Sequelize.TEXT},
-            item_2547: {type: Sequelize.TEXT},
-            item_2548: {type: Sequelize.TEXT},
-            item_2549: {type: Sequelize.TEXT},
-            item_2550: {type: Sequelize.TEXT},
-            item_2551: {type: Sequelize.TEXT},
-            item_2552: {type: Sequelize.TEXT},
-            item_2553: {type: Sequelize.TEXT},
-            item_2554: {type: Sequelize.TEXT},
-            item_2555: {type: Sequelize.TEXT},
-            item_2556: {type: Sequelize.TEXT},
-            item_2557: {type: Sequelize.TEXT},
-            item_2558: {type: Sequelize.TEXT},
-            item_2559: {type: Sequelize.TEXT},
-            item_2560: {type: Sequelize.TEXT},
-            item_2561: {type: Sequelize.TEXT},
-            item_2562: {type: Sequelize.TEXT},
-            item_2563: {type: Sequelize.TEXT},
-            item_2564: {type: Sequelize.TEXT},
-            item_2565: {type: Sequelize.TEXT},
-            item_2566: {type: Sequelize.TEXT},
-            item_2567: {type: Sequelize.TEXT},
-            item_2568: {type: Sequelize.TEXT},
-            item_2569: {type: Sequelize.TEXT},
-            item_2570: {type: Sequelize.TEXT},
-            item_2571: {type: Sequelize.TEXT},
-            item_2572: {type: Sequelize.TEXT},
-            item_2573: {type: Sequelize.TEXT},
-            item_2574: {type: Sequelize.TEXT},
-            item_2575: {type: Sequelize.TEXT},
-            item_2576: {type: Sequelize.TEXT},
-            item_2577: {type: Sequelize.TEXT},
-            item_2578: {type: Sequelize.TEXT},
-            item_2579: {type: Sequelize.TEXT},
-            item_2580: {type: Sequelize.TEXT},
-            item_2581: {type: Sequelize.TEXT},
-            item_2582: {type: Sequelize.TEXT},
-            item_2583: {type: Sequelize.TEXT},
-            item_2584: {type: Sequelize.TEXT},
-            item_2585: {type: Sequelize.TEXT},
-            item_2586: {type: Sequelize.TEXT},
-            item_2587: {type: Sequelize.TEXT},
-            item_2588: {type: Sequelize.TEXT},
-            item_2589: {type: Sequelize.TEXT},
-            item_2590: {type: Sequelize.TEXT},
-            item_2591: {type: Sequelize.TEXT},
-            item_2592: {type: Sequelize.TEXT},
-            item_2593: {type: Sequelize.TEXT},
-            item_2594: {type: Sequelize.TEXT},
-            item_2595: {type: Sequelize.TEXT},
-            item_2596: {type: Sequelize.TEXT},
-            item_2597: {type: Sequelize.TEXT},
-            item_2598: {type: Sequelize.TEXT},
-            item_2599: {type: Sequelize.TEXT},
-            item_2600: {type: Sequelize.TEXT},
-            item_2601: {type: Sequelize.TEXT},
-            item_2602: {type: Sequelize.TEXT},
-            item_2603: {type: Sequelize.TEXT},
-            item_2604: {type: Sequelize.TEXT},
-            item_2605: {type: Sequelize.TEXT},
-            item_2606: {type: Sequelize.TEXT},
-            item_2607: {type: Sequelize.TEXT},
-            item_2608: {type: Sequelize.TEXT},
-            item_2609: {type: Sequelize.TEXT},
-            item_2610: {type: Sequelize.TEXT},
-            item_2611: {type: Sequelize.TEXT},
-            item_2612: {type: Sequelize.TEXT},
-            item_2613: {type: Sequelize.TEXT},
-            item_2614: {type: Sequelize.TEXT},
-            item_2615: {type: Sequelize.TEXT},
-            item_2616: {type: Sequelize.TEXT},
-            item_2617: {type: Sequelize.TEXT},
-            item_2618: {type: Sequelize.TEXT},
-            item_2619: {type: Sequelize.TEXT},
-            item_2620: {type: Sequelize.TEXT},
-            item_2621: {type: Sequelize.TEXT},
-            item_2622: {type: Sequelize.TEXT},
-            item_2623: {type: Sequelize.TEXT},
-            item_2624: {type: Sequelize.TEXT},
-            item_2625: {type: Sequelize.TEXT},
-            item_2626: {type: Sequelize.TEXT},
-            item_2627: {type: Sequelize.TEXT},
-            item_2628: {type: Sequelize.TEXT},
-            item_2629: {type: Sequelize.TEXT},
-            item_2630: {type: Sequelize.TEXT},
-            item_2631: {type: Sequelize.TEXT},
-            item_2632: {type: Sequelize.TEXT},
-            item_2633: {type: Sequelize.TEXT},
-            item_2634: {type: Sequelize.TEXT},
-            item_2635: {type: Sequelize.TEXT},
-            item_2636: {type: Sequelize.TEXT},
-            item_2637: {type: Sequelize.TEXT},
-            item_2638: {type: Sequelize.TEXT},
-            item_2639: {type: Sequelize.TEXT},
-            item_2640: {type: Sequelize.TEXT},
-            item_2641: {type: Sequelize.TEXT},
-            item_2642: {type: Sequelize.TEXT},
-            item_2643: {type: Sequelize.TEXT},
-            item_2644: {type: Sequelize.TEXT},
-            item_2645: {type: Sequelize.TEXT},
-            item_2646: {type: Sequelize.TEXT},
-            item_2647: {type: Sequelize.TEXT},
-            item_2648: {type: Sequelize.TEXT},
-            item_2649: {type: Sequelize.TEXT},
-            item_2650: {type: Sequelize.TEXT},
-            item_2651: {type: Sequelize.TEXT},
-            item_2652: {type: Sequelize.TEXT},
-            item_2653: {type: Sequelize.TEXT},
-            item_2654: {type: Sequelize.TEXT},
-            item_2655: {type: Sequelize.TEXT},
-            item_2656: {type: Sequelize.TEXT},
-            item_2657: {type: Sequelize.TEXT},
-            item_2658: {type: Sequelize.TEXT},
-            item_2659: {type: Sequelize.TEXT},
-            item_2660: {type: Sequelize.TEXT},
-            item_2661: {type: Sequelize.TEXT},
-            item_2662: {type: Sequelize.TEXT},
-            item_2663: {type: Sequelize.TEXT},
-            item_2664: {type: Sequelize.TEXT},
-            item_2665: {type: Sequelize.TEXT},
-            item_2666: {type: Sequelize.TEXT},
-            item_2667: {type: Sequelize.TEXT},
-            item_2668: {type: Sequelize.TEXT},
-            item_2669: {type: Sequelize.TEXT},
-            item_2670: {type: Sequelize.TEXT},
-            item_2671: {type: Sequelize.TEXT},
-            item_2672: {type: Sequelize.TEXT},
-            item_2673: {type: Sequelize.TEXT},
-            item_2674: {type: Sequelize.TEXT},
-            item_2675: {type: Sequelize.TEXT},
-            item_2676: {type: Sequelize.TEXT},
-            item_2677: {type: Sequelize.TEXT},
-            item_2678: {type: Sequelize.TEXT},
-            item_2679: {type: Sequelize.TEXT},
-            item_2680: {type: Sequelize.TEXT},
-            item_2681: {type: Sequelize.TEXT},
-            item_2682: {type: Sequelize.TEXT},
-            item_2683: {type: Sequelize.TEXT},
-            item_2684: {type: Sequelize.TEXT},
-            item_2685: {type: Sequelize.TEXT},
-            item_2686: {type: Sequelize.TEXT},
-            item_2687: {type: Sequelize.TEXT},
-            item_2688: {type: Sequelize.TEXT},
-            item_2689: {type: Sequelize.TEXT},
-            item_2690: {type: Sequelize.TEXT},
-            item_2691: {type: Sequelize.TEXT},
-            item_2692: {type: Sequelize.TEXT},
-            item_2693: {type: Sequelize.TEXT},
-            item_2694: {type: Sequelize.TEXT},
-            item_2695: {type: Sequelize.TEXT},
-            item_2696: {type: Sequelize.TEXT},
-            item_2697: {type: Sequelize.TEXT},
-            item_2698: {type: Sequelize.TEXT},
-            item_2699: {type: Sequelize.TEXT},
-            item_2700: {type: Sequelize.TEXT},
-            item_2701: {type: Sequelize.TEXT},
-            item_2702: {type: Sequelize.TEXT},
-            item_2703: {type: Sequelize.TEXT},
-            item_2704: {type: Sequelize.TEXT},
-            item_2705: {type: Sequelize.TEXT},
-            item_2706: {type: Sequelize.TEXT},
-            item_2707: {type: Sequelize.TEXT},
-            item_2708: {type: Sequelize.TEXT},
-            item_2709: {type: Sequelize.TEXT},
-            item_2710: {type: Sequelize.TEXT},
-            item_2711: {type: Sequelize.TEXT},
-            item_2712: {type: Sequelize.TEXT},
-            item_2713: {type: Sequelize.TEXT},
-            item_2714: {type: Sequelize.TEXT},
-            item_2715: {type: Sequelize.TEXT},
-            item_2716: {type: Sequelize.TEXT},
-            item_2717: {type: Sequelize.TEXT},
-            item_2718: {type: Sequelize.TEXT},
-            item_2719: {type: Sequelize.TEXT},
-            item_2720: {type: Sequelize.TEXT},
-            item_2721: {type: Sequelize.TEXT},
-            item_2722: {type: Sequelize.TEXT},
-            item_2723: {type: Sequelize.TEXT},
-            item_2724: {type: Sequelize.TEXT},
-            item_2725: {type: Sequelize.TEXT},
-            item_2726: {type: Sequelize.TEXT},
-            item_2727: {type: Sequelize.TEXT},
-            item_2728: {type: Sequelize.TEXT},
-            item_2729: {type: Sequelize.TEXT},
-            item_2730: {type: Sequelize.TEXT},
-            item_2731: {type: Sequelize.TEXT},
-            item_2732: {type: Sequelize.TEXT},
-            item_2733: {type: Sequelize.TEXT},
-            item_2734: {type: Sequelize.TEXT},
-            item_2735: {type: Sequelize.TEXT},
-            item_2736: {type: Sequelize.TEXT},
-            item_2737: {type: Sequelize.TEXT},
-            item_2738: {type: Sequelize.TEXT},
-            item_2739: {type: Sequelize.TEXT},
-            item_2740: {type: Sequelize.TEXT},
-            item_2741: {type: Sequelize.TEXT},
-            item_2742: {type: Sequelize.TEXT},
-            item_2743: {type: Sequelize.TEXT},
-            item_2744: {type: Sequelize.TEXT},
-            item_2745: {type: Sequelize.TEXT},
-            item_2746: {type: Sequelize.TEXT},
-            item_2747: {type: Sequelize.TEXT},
-            item_2748: {type: Sequelize.TEXT},
-            item_2749: {type: Sequelize.TEXT},
-            item_2750: {type: Sequelize.TEXT},
-            item_2751: {type: Sequelize.TEXT},
-            item_2752: {type: Sequelize.TEXT},
-            item_2753: {type: Sequelize.TEXT},
-            item_2754: {type: Sequelize.TEXT},
-            item_2755: {type: Sequelize.TEXT},
-            item_2756: {type: Sequelize.TEXT},
-            item_2757: {type: Sequelize.TEXT},
-            item_2758: {type: Sequelize.TEXT},
-            item_2759: {type: Sequelize.TEXT},
-            item_2760: {type: Sequelize.TEXT},
-            item_2761: {type: Sequelize.TEXT},
-            item_2762: {type: Sequelize.TEXT},
-            item_2763: {type: Sequelize.TEXT},
-            item_2764: {type: Sequelize.TEXT},
-            item_2765: {type: Sequelize.TEXT},
-            item_2766: {type: Sequelize.TEXT},
-            item_2767: {type: Sequelize.TEXT},
-            item_2768: {type: Sequelize.TEXT},
-            item_2769: {type: Sequelize.TEXT},
-            item_2770: {type: Sequelize.TEXT},
-            item_2771: {type: Sequelize.TEXT},
-            item_2772: {type: Sequelize.TEXT},
-            item_2773: {type: Sequelize.TEXT},
-            item_2774: {type: Sequelize.TEXT},
-            item_2775: {type: Sequelize.TEXT},
-            item_2776: {type: Sequelize.TEXT},
-            item_2777: {type: Sequelize.TEXT},
-            item_2778: {type: Sequelize.TEXT},
-            item_2779: {type: Sequelize.TEXT},
-            item_2780: {type: Sequelize.TEXT},
-            item_2781: {type: Sequelize.TEXT},
-            item_2782: {type: Sequelize.TEXT},
-            item_2783: {type: Sequelize.TEXT},
-            item_2784: {type: Sequelize.TEXT},
-            item_2785: {type: Sequelize.TEXT},
-            item_2786: {type: Sequelize.TEXT},
-            item_2787: {type: Sequelize.TEXT},
-            item_2788: {type: Sequelize.TEXT},
-            item_2789: {type: Sequelize.TEXT},
-            item_2790: {type: Sequelize.TEXT},
-            item_2791: {type: Sequelize.TEXT},
-            item_2792: {type: Sequelize.TEXT},
-            item_2793: {type: Sequelize.TEXT},
-            item_2794: {type: Sequelize.TEXT},
-            item_2795: {type: Sequelize.TEXT},
-            item_2796: {type: Sequelize.TEXT},
-            item_2797: {type: Sequelize.TEXT},
-            item_2798: {type: Sequelize.TEXT},
-            item_2799: {type: Sequelize.TEXT},
-            item_2800: {type: Sequelize.TEXT},
-            item_2801: {type: Sequelize.TEXT},
-            item_2802: {type: Sequelize.TEXT},
-            item_2803: {type: Sequelize.TEXT},
-            item_2804: {type: Sequelize.TEXT},
-            item_2805: {type: Sequelize.TEXT},
-            item_2806: {type: Sequelize.TEXT},
-            item_2807: {type: Sequelize.TEXT},
-            item_2808: {type: Sequelize.TEXT},
-            item_2809: {type: Sequelize.TEXT},
-            item_2810: {type: Sequelize.TEXT},
-            item_2811: {type: Sequelize.TEXT},
-            item_2812: {type: Sequelize.TEXT},
-            item_2813: {type: Sequelize.TEXT},
-            item_2814: {type: Sequelize.TEXT},
-            item_2815: {type: Sequelize.TEXT},
-            item_2816: {type: Sequelize.TEXT},
-            item_2817: {type: Sequelize.TEXT},
-            item_2818: {type: Sequelize.TEXT},
-            item_2819: {type: Sequelize.TEXT},
-            item_2820: {type: Sequelize.TEXT},
-            item_2821: {type: Sequelize.TEXT},
-            item_2822: {type: Sequelize.TEXT},
-            item_2823: {type: Sequelize.TEXT},
-            item_2824: {type: Sequelize.TEXT},
-            item_2825: {type: Sequelize.TEXT},
-            item_2826: {type: Sequelize.TEXT},
-            item_2827: {type: Sequelize.TEXT},
-            item_2828: {type: Sequelize.TEXT},
-            item_2829: {type: Sequelize.TEXT},
-            item_2830: {type: Sequelize.TEXT},
-            item_2831: {type: Sequelize.TEXT},
-            item_2832: {type: Sequelize.TEXT},
-            item_2833: {type: Sequelize.TEXT},
-            item_2834: {type: Sequelize.TEXT},
-            item_2835: {type: Sequelize.TEXT},
-            item_2836: {type: Sequelize.TEXT},
-            item_2837: {type: Sequelize.TEXT},
-            item_2838: {type: Sequelize.TEXT},
-            item_2839: {type: Sequelize.TEXT},
-            item_2840: {type: Sequelize.TEXT},
-            item_2841: {type: Sequelize.TEXT},
-            item_2842: {type: Sequelize.TEXT},
-            item_2843: {type: Sequelize.TEXT},
-            item_2844: {type: Sequelize.TEXT},
-            item_2845: {type: Sequelize.TEXT},
-            item_2846: {type: Sequelize.TEXT},
-            item_2847: {type: Sequelize.TEXT},
-            item_2848: {type: Sequelize.TEXT},
-            item_2849: {type: Sequelize.TEXT},
-            item_2850: {type: Sequelize.TEXT},
-            item_2851: {type: Sequelize.TEXT},
-            item_2852: {type: Sequelize.TEXT},
-            item_2853: {type: Sequelize.TEXT},
-            item_2854: {type: Sequelize.TEXT},
-            item_2855: {type: Sequelize.TEXT},
-            item_2856: {type: Sequelize.TEXT},
-            item_2857: {type: Sequelize.TEXT},
-            item_2858: {type: Sequelize.TEXT},
-            item_2859: {type: Sequelize.TEXT},
-            item_2860: {type: Sequelize.TEXT},
-            item_2861: {type: Sequelize.TEXT},
-            item_2862: {type: Sequelize.TEXT},
-            item_2863: {type: Sequelize.TEXT},
-            item_2864: {type: Sequelize.TEXT},
-            item_2865: {type: Sequelize.TEXT},
-            item_2866: {type: Sequelize.TEXT},
-            item_2867: {type: Sequelize.TEXT},
-            item_2868: {type: Sequelize.TEXT},
-            item_2869: {type: Sequelize.TEXT},
-            item_2870: {type: Sequelize.TEXT},
-            item_2871: {type: Sequelize.TEXT},
-            item_2872: {type: Sequelize.TEXT},
-            item_2873: {type: Sequelize.TEXT},
-            item_2874: {type: Sequelize.TEXT},
-            item_2875: {type: Sequelize.TEXT},
-            item_2876: {type: Sequelize.TEXT},
-            item_2877: {type: Sequelize.TEXT},
-            item_2878: {type: Sequelize.TEXT},
-            item_2879: {type: Sequelize.TEXT},
-            item_2880: {type: Sequelize.TEXT},
-            item_2881: {type: Sequelize.TEXT},
-            item_2882: {type: Sequelize.TEXT},
-            item_2883: {type: Sequelize.TEXT},
-            item_2884: {type: Sequelize.TEXT},
-            item_2885: {type: Sequelize.TEXT},
-            item_2886: {type: Sequelize.TEXT},
-            item_2887: {type: Sequelize.TEXT},
-            item_2888: {type: Sequelize.TEXT},
-            item_2889: {type: Sequelize.TEXT},
-            item_2890: {type: Sequelize.TEXT},
-            item_2891: {type: Sequelize.TEXT},
-            item_2892: {type: Sequelize.TEXT},
-            item_2893: {type: Sequelize.TEXT},
-            item_2894: {type: Sequelize.TEXT},
-            item_2895: {type: Sequelize.TEXT},
-            item_2896: {type: Sequelize.TEXT},
-            item_2897: {type: Sequelize.TEXT},
-            item_2898: {type: Sequelize.TEXT},
-            item_2899: {type: Sequelize.TEXT},
-            item_2900: {type: Sequelize.TEXT},
-            item_2901: {type: Sequelize.TEXT},
-            item_2902: {type: Sequelize.TEXT},
-            item_2903: {type: Sequelize.TEXT},
-            item_2904: {type: Sequelize.TEXT},
-            item_2905: {type: Sequelize.TEXT},
-            item_2906: {type: Sequelize.TEXT},
-            item_2907: {type: Sequelize.TEXT},
-            item_2908: {type: Sequelize.TEXT},
-            item_2909: {type: Sequelize.TEXT},
-            item_2910: {type: Sequelize.TEXT},
-            item_2911: {type: Sequelize.TEXT},
-            item_2912: {type: Sequelize.TEXT},
-            item_2913: {type: Sequelize.TEXT},
-            item_2914: {type: Sequelize.TEXT},
-            item_2915: {type: Sequelize.TEXT},
-            item_2916: {type: Sequelize.TEXT},
-            item_2917: {type: Sequelize.TEXT},
-            item_2918: {type: Sequelize.TEXT},
-            item_2919: {type: Sequelize.TEXT},
-            item_2920: {type: Sequelize.TEXT},
-            item_2921: {type: Sequelize.TEXT},
-            item_2922: {type: Sequelize.TEXT},
-            item_2923: {type: Sequelize.TEXT},
-            item_2924: {type: Sequelize.TEXT},
-            item_2925: {type: Sequelize.TEXT},
-            item_2926: {type: Sequelize.TEXT},
-            item_2927: {type: Sequelize.TEXT},
-            item_2928: {type: Sequelize.TEXT},
-            item_2929: {type: Sequelize.TEXT},
-            item_2930: {type: Sequelize.TEXT},
-            item_2931: {type: Sequelize.TEXT},
-            item_2932: {type: Sequelize.TEXT},
-            item_2933: {type: Sequelize.TEXT},
-            item_2934: {type: Sequelize.TEXT},
-            item_2935: {type: Sequelize.TEXT},
-            item_2936: {type: Sequelize.TEXT},
-            item_2937: {type: Sequelize.TEXT},
-            item_2938: {type: Sequelize.TEXT},
-            item_2939: {type: Sequelize.TEXT},
-            item_2940: {type: Sequelize.TEXT},
-            item_2941: {type: Sequelize.TEXT},
-            item_2942: {type: Sequelize.TEXT},
-            item_2943: {type: Sequelize.TEXT},
-            item_2944: {type: Sequelize.TEXT},
-            item_2945: {type: Sequelize.TEXT},
-            item_2946: {type: Sequelize.TEXT},
-            item_2947: {type: Sequelize.TEXT},
-            item_2948: {type: Sequelize.TEXT},
-            item_2949: {type: Sequelize.TEXT},
-            item_2950: {type: Sequelize.TEXT},
-            item_2951: {type: Sequelize.TEXT},
-            item_2952: {type: Sequelize.TEXT},
-            item_2953: {type: Sequelize.TEXT},
-            item_2954: {type: Sequelize.TEXT},
-            item_2955: {type: Sequelize.TEXT},
-            item_2956: {type: Sequelize.TEXT},
-            item_2957: {type: Sequelize.TEXT},
-            item_2958: {type: Sequelize.TEXT},
-            item_2959: {type: Sequelize.TEXT},
-            item_2960: {type: Sequelize.TEXT},
-            item_2961: {type: Sequelize.TEXT},
-            item_2962: {type: Sequelize.TEXT},
-            item_2963: {type: Sequelize.TEXT},
-            item_2964: {type: Sequelize.TEXT},
-            item_2965: {type: Sequelize.TEXT},
-            item_2966: {type: Sequelize.TEXT},
-            item_2967: {type: Sequelize.TEXT},
-            item_2968: {type: Sequelize.TEXT},
-            item_2969: {type: Sequelize.TEXT},
-            item_2970: {type: Sequelize.TEXT},
-            item_2971: {type: Sequelize.TEXT},
-            item_2972: {type: Sequelize.TEXT},
-            item_2973: {type: Sequelize.TEXT},
-            item_2974: {type: Sequelize.TEXT},
-            item_2975: {type: Sequelize.TEXT},
-            item_2976: {type: Sequelize.TEXT},
-            item_2977: {type: Sequelize.TEXT},
-            item_2978: {type: Sequelize.TEXT},
-            item_2979: {type: Sequelize.TEXT},
-            item_2980: {type: Sequelize.TEXT},
-            item_2981: {type: Sequelize.TEXT},
-            item_2982: {type: Sequelize.TEXT},
-            item_2983: {type: Sequelize.TEXT},
-            item_2984: {type: Sequelize.TEXT},
-            item_2985: {type: Sequelize.TEXT},
-            item_2986: {type: Sequelize.TEXT},
-            item_2987: {type: Sequelize.TEXT},
-            item_2988: {type: Sequelize.TEXT},
-            item_2989: {type: Sequelize.TEXT},
-            item_2990: {type: Sequelize.TEXT},
-            item_2991: {type: Sequelize.TEXT},
-            item_2992: {type: Sequelize.TEXT},
-            item_2993: {type: Sequelize.TEXT},
-            item_2994: {type: Sequelize.TEXT},
-            item_2995: {type: Sequelize.TEXT},
-            item_2996: {type: Sequelize.TEXT},
-            item_2997: {type: Sequelize.TEXT},
-            item_2998: {type: Sequelize.TEXT},
-            item_2999: {type: Sequelize.TEXT},
-            item_3000: {type: Sequelize.TEXT},
+
+
         }, {
             freezeTableName: true,
             timestamps: false

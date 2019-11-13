@@ -217,4 +217,6 @@ const data_search_detail = (req, res) => {
     })
 }
 
+
+
 module.exports = {data_search_id, data_search, data_search_detail}

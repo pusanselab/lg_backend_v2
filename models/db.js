@@ -30,25 +30,61 @@ const db = {
     User: require('./user.model')(Sequelize, sequelize),
     Header: require('./header.model')(Sequelize, sequelize),
     Item: require('./item.model')(Sequelize, sequelize),
-    Raw_1: require('./raw_1.model')(Sequelize, sequelize),
-    Raw_2: require('./raw_2.model')(Sequelize, sequelize),
-    Raw_3: require('./raw_3.model')(Sequelize, sequelize),
-    Raw_4: require('./raw_4.model')(Sequelize, sequelize)
+    Raw_0000_0500: require('./raw_0000_0500.model')(Sequelize, sequelize),
+    Raw_0501_1000: require('./raw_0501_1000.model')(Sequelize, sequelize),
+    Raw_1001_1500: require('./raw_1001_1500.model')(Sequelize, sequelize),
+    Raw_1501_2000: require('./raw_1501_2000.model')(Sequelize, sequelize),
+    Raw_2001_2500: require('./raw_2001_2500.model')(Sequelize, sequelize),
+    Raw_2501_3000: require('./raw_2501_3000.model')(Sequelize, sequelize),
+    Raw_3001_3500: require('./raw_3001_3500.model')(Sequelize, sequelize),
+    Raw_3501_4000: require('./raw_3501_4000.model')(Sequelize, sequelize),
+    Raw_4001_4500: require('./raw_4001_4500.model')(Sequelize, sequelize),
+    Raw_4501_5000: require('./raw_4501_5000.model')(Sequelize, sequelize)
 }
 
-db.Header.hasMany(db.Raw_1, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+db.Header.hasMany(db.Raw_0000_0500, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
 // db.Raw_1.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
 
 
-db.Header.hasMany(db.Raw_2, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+db.Header.hasMany(db.Raw_0501_1000, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
 // db.Raw_2.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
 
 
-db.Header.hasMany(db.Raw_3, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+db.Header.hasMany(db.Raw_1001_1500, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
 // db.Raw_3.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
 
 
-db.Header.hasMany(db.Raw_4, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+db.Header.hasMany(db.Raw_1501_2000, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
+
+db.Header.hasMany(db.Raw_2001_2500, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
+
+db.Header.hasMany(db.Raw_2501_3000, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
+
+db.Header.hasMany(db.Raw_3001_3500, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
+
+db.Header.hasMany(db.Raw_3501_4000, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
+
+db.Header.hasMany(db.Raw_4001_4500, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
+// db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
+
+
+
+db.Header.hasMany(db.Raw_4501_5000, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})
 // db.Raw_4.belongsTo(db.Header, {foreignKey: 'header_uid', constraints: false, targetKey: 'header_uid', onDelete: 'cascade'})
 
 
