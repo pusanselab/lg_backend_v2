@@ -55,7 +55,7 @@ const chamber_testroom_number = (req, res) => {
             result.testroom_number = result.testroom_number.filter( (item, idx, array) => {
                 return array.indexOf( item ) === idx ;
             });
-            
+
             result.code = 200
             result.message = "success"
             return res.json(result)
@@ -65,6 +65,8 @@ const chamber_testroom_number = (req, res) => {
 
 
 const chamber_status = (req, res) => {
+    const testroom_number = req.body.testroom_number
+
     const result = {
         month:[
             [],[],[],[],[],[]
@@ -73,6 +75,9 @@ const chamber_status = (req, res) => {
     const date = new Date();
 
     db.Header.findAll({
+        where:{
+            conn_testroom_number : testroom_number
+        },
         order: [
             ['conn_file_date', 'DESC']
         ],
