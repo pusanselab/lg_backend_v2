@@ -224,9 +224,9 @@ const overview = (req, res) => {
                                                                                 result.content.test[5] = counter.dataValues
                                                                                 result.content.test[5].name = '기타'
 
-                                                                                db.Raw_1.findOne({
+                                                                                db.Raw_0000_0500.findOne({
                                                                                     attributes: [
-                                                                                        [sequelize.fn('count', sequelize.col('raw1Uid')), 'count']
+                                                                                        [sequelize.fn('count', sequelize.col('rawUid')), 'count']
                                                                                     ]
                                                                                 }).then(counter => {
                                                                                     result.content.db_usage = (counter.dataValues.count / 1000000000).toFixed(10)
