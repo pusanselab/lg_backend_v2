@@ -44,7 +44,7 @@ router.post('/chamber/recent_test', chamber_ctrl.recent_test)
 router.post('/chamber/chamber_status', chamber_ctrl.chamber_status)
 router.post('/session', session_ctrl.session)
 router.get('/red_check', red_check_ctrl.red_check)
-
+router.post('/chamber/chamber_testroom_number', chamber_ctrl.chamber_testroom_number)
 
 
 
