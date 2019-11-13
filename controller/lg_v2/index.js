@@ -8,7 +8,7 @@ const session_ctrl = require('./session.ctrl')
 const overview_ctrl = require('./overview.ctrl')
 const login_ctrl = require('./login.ctrl')
 const chamber_ctrl = require('./chamber.ctrl')
-// const data_search_ctrl = require('./data_search.ctrl')
+const red_check_ctrl = require('./red_check.ctrl')
 // const data_search_ctrl = require('./data_search.ctrl')
 const router = express.Router()
 
@@ -43,6 +43,7 @@ router.post('/login', login_ctrl.login)
 router.post('/chamber/recent_test', chamber_ctrl.recent_test)
 router.post('/chamber/chamber_status', chamber_ctrl.chamber_status)
 router.post('/session', session_ctrl.session)
+router.get('/red_check', red_check_ctrl.red_check)
 
 
 
