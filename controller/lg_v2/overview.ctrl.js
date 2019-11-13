@@ -50,14 +50,14 @@ const overview = (req, res) => {
 
                 db.Header.findOne({
                     where: {
-                        lgmv_model_filter1: 'Multi Water'
+                        lgmv_model_filter1: 'Multi V Water'
                     },
                     attributes: [
                         [sequelize.fn('count', sequelize.col('lgmv_model_filter1')), 'count']
                     ],
                 }).then(counter => {
                     result.content.model[3] = counter.dataValues
-                    result.content.model[3].name = 'Multi Water'
+                    result.content.model[3].name = 'Multi V Water'
 
                     db.Header.findOne({
                         where: {
