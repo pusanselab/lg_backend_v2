@@ -1,19 +1,67 @@
 const moment = require('moment')
+const sequelize = require('sequelize');
+
+
 
 const recent_test = (req, res) => {
-    const result = {}
+    const result = {
+        test_time : []
+    }
+    let temp_time = 0
+    let total_time =""
 
     db.Header.findAll({
         order: [
             ['lgmv_date', 'DESC']
         ],
         limit: 5
-    }).then(header => {
+    }).then(async header => {
         if (header.length == null) {
             result.code = 400
             result.message = "failure"
             return res.json(result)
         } else {
+            for(let i = 0 ; i < header.length ; i++){
+                console.log(header[i].header_uid)
+                // await db.Raw_0000_0500.findAll({
+                //     where: {
+                //         header_uid: header[i].header_uid
+                //     },
+                //     // order:[
+                //     //     ['Time', 'ASC']
+                //     // ],
+                //     attribute: [
+                //         [sequelize.fn('Max', sequelize.col('Time')), 'Time'],
+                //     ]
+                // })
+
+                await db.Raw_0000_0500.max('Time', {
+                    where: {
+                        header_uid : header[i].header_uid
+                    }
+                }).then(raws_time => {
+                    console.log(header[i].conn_file_time)
+                    console.log(raws_time)
+
+                    const start_time = header[i].conn_file_time
+                    const end_time = raws_time
+
+                    // console.log(raws_time[raws_time.length-1].Time)
+                    // console.log(raws_time[0].Time)
+                    // const start_time = raws_time[0].Time
+                    // const end_time = raws_time[raws_time.length-1].Time
+
+
+                    temp_time = moment(end_time,"HH:mm:ss").diff(moment(start_time,"HH:mm:ss"))/1000
+
+                    total_time = String(parseInt(temp_time/3600 )) + "시간 " + String(parseInt((temp_time%3600)/60)) + "분 " + String((temp_time%60)) + "초 "
+
+                    console.log(total_time)
+
+                    result.test_time.push(total_time)
+                })
+
+            }
             result.content = header
             result.code = 200
             result.message = "success"
