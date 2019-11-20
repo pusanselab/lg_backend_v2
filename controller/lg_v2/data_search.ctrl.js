@@ -1,3 +1,5 @@
+const moment = require('moment')
+
 const data_search_id = (req, res) => {
     const uid = req.body.header_uid;
     const result = {}
@@ -16,6 +18,9 @@ const data_search_id = (req, res) => {
 
 
 const data_search = (req, res) => {
+
+    let date_from = req.body.lg_search_date_box_from
+    let date_to = req.body.lg_search_date_box_to
     const header_uid = req.body.header_uid
     const lgmv_model_filter1 = req.body.lgmv_model_filter1
     const lgmv_model_filter2 = req.body.lgmv_model_filter2
@@ -43,8 +48,11 @@ const data_search = (req, res) => {
     const conn_memo = req.body.conn_memo
     const conn_operation_rate = req.body.conn_operation_rate
 
+    console.log(date_to)
+    console.log(date_from)
     const result = {}
-    const query = {}
+    let query = {
+    }
 
     function execption_checker(input) {
         if (input == "" || input == undefined || input == null) {
@@ -52,6 +60,22 @@ const data_search = (req, res) => {
         }
         else {
             return true
+        }
+    }
+
+    if(moment(date_to,"YYYY-MM-DD").diff(moment(date_from,"YYYY-MM-DD")) > 0){
+        query = {
+            conn_file_date: {
+                between: []
+            }
+        }
+        if (execption_checker(date_from)) {
+            date_from = date_from.replace(/-/g,'.')
+            query.conn_file_date.between.push(date_from)
+        }
+        if (execption_checker(date_to)) {
+            date_to = date_to.replace(/-/g, '.')
+            query.conn_file_date.between.push(date_to)
         }
     }
 
@@ -142,6 +166,7 @@ const data_search = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else {
+            console.log('에헤라디야')
             result.content = header
             result.code = 200
             result.message = "success"

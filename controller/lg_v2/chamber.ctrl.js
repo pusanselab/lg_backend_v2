@@ -21,6 +21,10 @@ const recent_test = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else {
+
+            result.content = header
+            result.code = 200
+            result.message = "success"
             for(let i = 0 ; i < header.length ; i++){
                 console.log(header[i].header_uid)
                 // await db.Raw_0000_0500.findAll({
@@ -58,13 +62,10 @@ const recent_test = (req, res) => {
 
                     console.log(total_time)
 
-                    result.test_time.push(total_time)
+                    result.content[i].total_test_time = total_time
                 })
 
             }
-            result.content = header
-            result.code = 200
-            result.message = "success"
             return res.json(result)
         }
     })
