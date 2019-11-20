@@ -229,7 +229,6 @@ const overview = (req, res) => {
                                                                                     ]
                                                                                 }).then(counter => {
                                                                                     result.content.db_usage = (counter.dataValues.count / 1000000000).toFixed(10)
-                                                                                    console.log(result.content.db_usage)
 
                                                                                     return res.json(result)
 

@@ -1,7 +1,4 @@
 const moment = require('moment')
-const sequelize = require('sequelize');
-
-
 
 const recent_test = (req, res) => {
     const result = {
@@ -26,17 +23,6 @@ const recent_test = (req, res) => {
             result.code = 200
             result.message = "success"
             for(let i = 0 ; i < header.length ; i++){
-                // await db.Raw_0000_0500.findAll({
-                //     where: {
-                //         header_uid: header[i].header_uid
-                //     },
-                //     // order:[
-                //     //     ['Time', 'ASC']
-                //     // ],
-                //     attribute: [
-                //         [sequelize.fn('Max', sequelize.col('Time')), 'Time'],
-                //     ]
-                // })
 
                 await db.Raw_0000_0500.max('Time', {
                     where: {
@@ -118,8 +104,7 @@ const chamber_status = (req, res) => {
         },
         order: [
             ['conn_file_date', 'DESC']
-        ],
-        // attributes : ["conn_file_date"]
+        ]
     }).then(header => {
         if (header.length == null) {
             result.code = 400
