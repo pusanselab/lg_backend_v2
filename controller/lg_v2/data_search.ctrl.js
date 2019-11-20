@@ -185,6 +185,44 @@ const data_search = (req, res) => {
     })
 }
 
+const similar_test = (req, res) =>{
+    const lgmv_serial_number = req.body.lgmv_serial_number;
+    const calorimeter_id_wb = req.body.calorimeter_id_wb;
+    const calorimeter_id_db = req.body.calorimeter_id_db;
+    const calorimeter_od_wb = req.body.calorimeter_od_wb;
+    const calorimeter_od_db = req.body.calorimeter_od_db;
+    const conn_operation_rate = req.body.conn_operation_rate;
+    const conn_testroom_number = req.body.conn_testroom_number;
+    const test_step2 = req.body.test_step2;
+
+    const result = {}
+
+    db.Header.findAll({
+        where: {
+            lgmv_serial_number: lgmv_serial_number,
+            calorimeter_id_wb: calorimeter_id_wb,
+            calorimeter_id_db: calorimeter_id_db,
+            calorimeter_od_wb: calorimeter_od_wb,
+            calorimeter_od_db: calorimeter_od_db,
+            conn_operation_rate: conn_operation_rate,
+            conn_testroom_number: conn_testroom_number,
+            test_step2: test_step2
+        },
+    }).then(async header => {
+        if (header.length == 0) {
+            result.code = 400
+            result.message = "failure"
+            return res.json(result)
+        } else {
+            result.code = 200
+            result.message = "success"
+            result.content = header
+            return res.json(result)
+        }
+    })
+
+}
+
 const data_search_detail = (req, res) => {
     const lgmv_serial_number = req.body.lgmv_serial_number;
     const calorimeter_id_wb = req.body.calorimeter_id_wb;
@@ -198,36 +236,11 @@ const data_search_detail = (req, res) => {
     const header_uid = req.body.header_uid;
 
     const result = {
-        summary: {},
         content: {
             raw_data: {}
         }
     };
 
-    // 냉방 성능 확인  -> LG 에서 max 값이 여러개일 때 어떻게 할 것인지 알려주면 추후 작업 할 것임.
-    // db.Header.findByPk(header_uid).then(header => {
-    //     if (header.test_step2 === '냉방 성능') {
-    //         eer_item_num = header.eer_item_num
-    //         item_num = eer_item_num.slice(5)
-    //         if(parseInt(item_num) <= 1000) {
-    //             db.Raw_1.findOne({
-    //                 where: {
-    //
-    //                 }
-    //             })
-    //         }
-    //         else if(parseInt(item_num) <= 2000) {
-    //
-    //         }else if(parseInt(item_num) <= 3000) {
-    //
-    //         }else if(parseInt(item_num) <= 4000) {
-    //
-    //         }
-    //     }
-    // })
-
-
-    //유사 시험 검사
     db.Header.findOne({
         where: {
             header_uid: header_uid,
@@ -2438,4 +2451,4 @@ const data_search_detail = (req, res) => {
 }
 
 
-module.exports = {data_search_id, data_search, data_search_detail}
+module.exports = {data_search_id, data_search, data_search_detail, similar_test}

@@ -26,7 +26,6 @@ const login = (req, res) => {
                     maxAge: 1000 * 10 // 쿠키 유효기간
                 }
             };
-            console.log(req.session)
             result.code = 200
             result.message = "success"
             return res.json(result)
