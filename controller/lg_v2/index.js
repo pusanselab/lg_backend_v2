@@ -25,7 +25,7 @@ router.post('/data_search', data_search_ctrl.data_search)
 router.post('/data_search_detail', data_search_ctrl.data_search_detail)
 router.post('/graph/items',graph_ctrl.get_item_list)
 router.post('/graph/raws', graph_ctrl.get_raw_list)
-
+router.post('/check_admin', admin_ctrl.check_admin_password)
 
 
 

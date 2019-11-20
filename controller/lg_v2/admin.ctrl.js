@@ -59,4 +59,15 @@ const delete_header_data = (req, res) => {
     }
 }
 
-module.exports = {create_user, delete_header_data}
+const check_admin_password = (req, res) => {
+    db.User.findOne({
+        where: {
+            userUid: 1
+        }
+    }).then(user => {
+        return res.json(user).end()
+    })
+
+}
+
+module.exports = {create_user, delete_header_data, check_admin_password}
