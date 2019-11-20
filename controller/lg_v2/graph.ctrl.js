@@ -1,12 +1,19 @@
 const get_item_list = (req, res) => {
     const header_uid = req.body.header_uid
-
+    const result = []
     db.Item.findAll({
         where: {
             header_uid: header_uid
         }
     }).then(items => {
-        return res.json(items)
+        for(let i=0; i<items.length; i++) {
+            if(!(items[i].unit === "UNIT_STRING")) {
+                result.push(items[i])
+            }
+            if(i === items.length-1) {
+                return res.json(result)
+            }
+        }
     })
 }
 
