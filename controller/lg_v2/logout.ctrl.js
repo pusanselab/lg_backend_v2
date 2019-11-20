@@ -2,12 +2,12 @@
 
 const logout = (req, res) => {
 
-    console.log(req.body)
+    req.session.destroy()
     const result = {
         code:200,
         message:"success"
     }
-
+    console.log(req.session)
     return res.json(result)
 }
 

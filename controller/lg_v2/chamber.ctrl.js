@@ -26,7 +26,6 @@ const recent_test = (req, res) => {
             result.code = 200
             result.message = "success"
             for(let i = 0 ; i < header.length ; i++){
-                console.log(header[i].header_uid)
                 // await db.Raw_0000_0500.findAll({
                 //     where: {
                 //         header_uid: header[i].header_uid
@@ -44,23 +43,14 @@ const recent_test = (req, res) => {
                         header_uid : header[i].header_uid
                     }
                 }).then(raws_time => {
-                    console.log(header[i].conn_file_time)
-                    console.log(raws_time)
 
                     const start_time = header[i].conn_file_time
                     const end_time = raws_time
-
-                    // console.log(raws_time[raws_time.length-1].Time)
-                    // console.log(raws_time[0].Time)
-                    // const start_time = raws_time[0].Time
-                    // const end_time = raws_time[raws_time.length-1].Time
-
 
                     temp_time = moment(end_time,"HH:mm:ss").diff(moment(start_time,"HH:mm:ss"))/1000
 
                     total_time = String(parseInt(temp_time/3600 )) + "시간 " + String(parseInt((temp_time%3600)/60)) + "분 " + String((temp_time%60)) + "초 "
 
-                    console.log(total_time)
 
                     result.content[i].total_test_time = total_time
                 })
@@ -92,7 +82,6 @@ const chamber_testroom_number = (req, res) => {
 
             for(var i = 0 ; i < header.length ; i++){
                 var data_date = header[i].dataValues.conn_file_date;
-                console.log(data_date)
                 data_date = data_date.replace(/\./g,'-')
                 var between = moment(date).diff(data_date, "month")
 

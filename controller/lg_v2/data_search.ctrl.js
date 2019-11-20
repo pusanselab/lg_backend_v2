@@ -15,7 +15,6 @@ const data_search_id = (req, res) => {
     })
 }
 
-
 const data_search = (req, res) => {
 
     let date_from = req.body.lg_search_date_box_from
@@ -185,7 +184,6 @@ const data_search = (req, res) => {
         }
     })
 }
-
 
 const data_search_detail = (req, res) => {
     const lgmv_serial_number = req.body.lgmv_serial_number;

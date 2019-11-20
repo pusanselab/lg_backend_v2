@@ -22,7 +22,6 @@ const overview = (req, res) => {
             [sequelize.fn('count', sequelize.col('lgmv_model_filter1')), 'count']
         ],
     }).then(counter => {
-        console.log(counter.dataValues)
         result.content.model[0] = counter.dataValues
         result.content.model[0].name = 'Multi V H/P'
 

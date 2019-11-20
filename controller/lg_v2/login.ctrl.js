@@ -3,9 +3,8 @@
 const login = (req, res) => {
     const Id = req.body.user_id;
     const Pwd = req.body.user_pwd;
+    var sess
 
-    // console.log(req.body.userId)
-    // console.log(req.body.userPwd)
     console.log(req.body)
     const result = {};
     db.User.findOne({
@@ -24,7 +23,7 @@ const login = (req, res) => {
                 name: 'Testing',
                 authorized: true,
                 cookie: {
-                    maxAge: 1000 * 10 // 쿠키 유효기간 1시간
+                    maxAge: 1000 * 10 // 쿠키 유효기간
                 }
             };
             console.log(req.session)
