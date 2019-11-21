@@ -7,7 +7,6 @@ const logout = (req, res) => {
         code:200,
         message:"success"
     }
-    console.log(req.session)
     return res.json(result)
 }
 

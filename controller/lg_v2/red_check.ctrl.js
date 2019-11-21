@@ -45,7 +45,6 @@ const red_check = (req, res) => {
 
             const eer_result_params = recent_header.eer_result_params.split(",")
             const eer_item_num = recent_header.eer_item_num
-            console.log(eer_result_params)
             const attr = ['header_uid', eer_item_num]
             if (Number(eer_item_num.slice(5)) <= 500) {
                 db.Raw_0000_0500.findAll({
@@ -2297,7 +2296,6 @@ const red_check = (req, res) => {
                                 }
 
                                 if(j === eer_result_params.length -1 ){
-                                    console.log("redundancy check finish")
                                     return res.json(result)
                                 }
                             }

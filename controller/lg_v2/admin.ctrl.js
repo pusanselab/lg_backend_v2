@@ -1,5 +1,4 @@
 const create_user = (req, res) => {
-    console.log(req.body)
     const result = {}
     db.User.findOne({
         where: {
@@ -27,7 +26,6 @@ const delete_header_data = (req, res) => {
     if (type === 'date') {
         const first_date = body.first_date
         const end_date = body.end_date
-        console.log(type)
         db.Header.findAll().then(headers => {
             for (var i = 0; i < headers.length; i++) {
                 var header_date = headers[i].lgmv_date.substring(0, 10)
@@ -48,7 +46,6 @@ const delete_header_data = (req, res) => {
 
     if (type === 'id') {
         const id = body.id
-        console.log(type)
         db.Header.destroy({
             where: {
                 header_uid: id

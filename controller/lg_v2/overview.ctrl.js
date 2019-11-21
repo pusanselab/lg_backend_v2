@@ -12,7 +12,6 @@ const overview = (req, res) => {
             ]
         },
     };
-    console.log(req.session)
 
     db.Header.findOne({
         where: {

@@ -49,10 +49,6 @@ const data_search = (req, res) => {
     const conn_memo = req.body.conn_memo
     const conn_operation_rate = req.body.conn_operation_rate
 
-
-    console.log(req.body)
-    console.log(date_to)
-    console.log(date_from)
     const result = {}
     let query = {}
 
@@ -167,7 +163,6 @@ const data_search = (req, res) => {
     if (execption_checker(conn_operation_rate)) {
         query.conn_operation_rate = conn_operation_rate
     }
-    console.log(query)
     db.Header.findAll({
         where: query
     }).then(header => {
@@ -176,7 +171,6 @@ const data_search = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else {
-            console.log('에헤라디야')
             result.content = header
             result.code = 200
             result.message = "success"
@@ -186,26 +180,14 @@ const data_search = (req, res) => {
 }
 
 const similar_test = (req, res) =>{
-    const lgmv_serial_number = req.body.lgmv_serial_number;
-    const calorimeter_id_wb = req.body.calorimeter_id_wb;
-    const calorimeter_id_db = req.body.calorimeter_id_db;
-    const calorimeter_od_wb = req.body.calorimeter_od_wb;
-    const calorimeter_od_db = req.body.calorimeter_od_db;
-    const conn_operation_rate = req.body.conn_operation_rate;
-    const conn_testroom_number = req.body.conn_testroom_number;
+    const test_step1 = req.body.test_step1;
     const test_step2 = req.body.test_step2;
 
     const result = {}
 
     db.Header.findAll({
         where: {
-            lgmv_serial_number: lgmv_serial_number,
-            calorimeter_id_wb: calorimeter_id_wb,
-            calorimeter_id_db: calorimeter_id_db,
-            calorimeter_od_wb: calorimeter_od_wb,
-            calorimeter_od_db: calorimeter_od_db,
-            conn_operation_rate: conn_operation_rate,
-            conn_testroom_number: conn_testroom_number,
+            test_step1: test_step1,
             test_step2: test_step2
         },
     }).then(async header => {
@@ -224,15 +206,6 @@ const similar_test = (req, res) =>{
 }
 
 const data_search_detail = (req, res) => {
-    const lgmv_serial_number = req.body.lgmv_serial_number;
-    const calorimeter_id_wb = req.body.calorimeter_id_wb;
-    const calorimeter_id_db = req.body.calorimeter_id_db;
-    const calorimeter_od_wb = req.body.calorimeter_od_wb;
-    const calorimeter_od_db = req.body.calorimeter_od_db;
-    const conn_operation_rate = req.body.conn_operation_rate;
-    const conn_testroom_number = req.body.conn_testroom_number;
-    const test_step2 = req.body.test_step2;
-
     const header_uid = req.body.header_uid;
 
     const result = {
@@ -244,14 +217,7 @@ const data_search_detail = (req, res) => {
     db.Header.findOne({
         where: {
             header_uid: header_uid,
-            lgmv_serial_number: lgmv_serial_number,
-            calorimeter_id_wb: calorimeter_id_wb,
-            calorimeter_id_db: calorimeter_id_db,
-            calorimeter_od_wb: calorimeter_od_wb,
-            calorimeter_od_db: calorimeter_od_db,
-            conn_operation_rate: conn_operation_rate,
-            conn_testroom_number: conn_testroom_number,
-            test_step2: test_step2
+            test_step1: "냉방성능"
         },
         order: [['conn_file_date', 'ASC']]
     }).then(async header => {
@@ -264,7 +230,6 @@ const data_search_detail = (req, res) => {
 
             const eer_result_params = header.dataValues.eer_result_params.split(",")
             const eer_item_num = header.dataValues.eer_item_num
-            console.log(eer_result_params)
             const attr = ['header_uid', eer_item_num]
             if (Number(eer_item_num.slice(5)) <= 500) {
                 db.Raw_0000_0500.findAll({
@@ -475,7 +440,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -692,7 +656,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -910,7 +873,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -1128,7 +1090,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -1346,7 +1307,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -1564,7 +1524,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -1782,7 +1741,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -2000,7 +1958,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -2218,7 +2175,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }
@@ -2435,8 +2391,6 @@ const data_search_detail = (req, res) => {
                                 }
 
                                 if (j === eer_result_params.length - 1) {
-                                    console.log("redundancy check finish")
-                                    console.log(result)
                                     return res.json(result)
                                 }
                             }

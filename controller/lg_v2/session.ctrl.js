@@ -8,7 +8,6 @@ const session = (req, res) => {
         result.session = false
     }
 
-    console.log(req.session)
     return res.json(result)
 }
 

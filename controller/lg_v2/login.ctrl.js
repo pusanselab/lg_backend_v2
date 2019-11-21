@@ -3,9 +3,7 @@
 const login = (req, res) => {
     const Id = req.body.user_id;
     const Pwd = req.body.user_pwd;
-    var sess
 
-    console.log(req.body)
     const result = {};
     db.User.findOne({
         where: {
