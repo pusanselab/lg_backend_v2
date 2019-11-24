@@ -180,15 +180,17 @@ const data_search = (req, res) => {
 }
 
 const similar_test = (req, res) =>{
+    const header_uid = req.body.header_uid;
     const test_step1 = req.body.test_step1;
     const test_step2 = req.body.test_step2;
 
     const result = {}
-
+    console.log(header_uid)
     db.Header.findAll({
         where: {
             test_step1: test_step1,
-            test_step2: test_step2
+            test_step2: test_step2,
+            header_uid : { $not: header_uid}
         },
     }).then(async header => {
         if (header.length == 0) {
