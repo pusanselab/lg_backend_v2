@@ -35,6 +35,7 @@ const recent_test = (req, res) => {
 
                     temp_time = moment(end_time,"HH:mm:ss").diff(moment(start_time,"HH:mm:ss"))/1000
                     total_time = String(parseInt(temp_time/3600 )) + "시간 " + String(parseInt((temp_time%3600)/60)) + "분 " + String((temp_time%60)) + "초 "
+<<<<<<< HEAD
 
                     console.log(header[i].header_uid)
                     console.log(start_time)
@@ -42,6 +43,11 @@ const recent_test = (req, res) => {
 
                     console.log(total_time)
                     console.log("---------------")
+=======
+                    console.log(header[i].header_uid)
+                    console.log(total_time)
+                    console.log('======')
+>>>>>>> f5f2a2c17776a7522859704d23d4371eb41da0f7
 
                     result.test_time.push(total_time)
                 })
