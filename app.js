@@ -5,7 +5,9 @@ const db = require('./models/db')
 const express = require('express')
 const cookieParser = require('cookie-parser')
 const global = require('./helpers/global_helper')
-const session = require('express-session')
+const sessionStore = {
+
+}
 
 const app = express()
 let appRoot = path.resolve(__dirname)
@@ -16,14 +18,14 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use(session({
-    key: 'session_cookie_name',
-    secret: 'session_cookie_secret',
-    resave: false,
-    saveUninitialized: false
-}))
+// app.use(session({
+//     key: 'session_cookie_name',
+//     secret: 'session_cookie_secret',
+//     resave: false,
+//     saveUninitialized: false
+// }))
 
-global(db, app, appRoot, express)
+global(db, app, appRoot, express, sessionStore)
 require('./util/swagger.util')
 require('./middleware/pageable')
 require('./middleware/router')

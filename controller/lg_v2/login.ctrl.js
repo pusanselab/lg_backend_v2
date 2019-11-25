@@ -15,15 +15,12 @@ const login = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else if (user.pwd === Pwd) {
-            req.session.user = {
-                id: user.id,
-                pw: user.pwd,
-                name: 'Testing',
-                authorized: true,
-                cookie: {
-                    maxAge: 1000 * 10 // 쿠키 유효기간
-                }
-            };
+            sessionStore.user_id = Id
+            console.log(sessionStore)
+            result.user_info = {
+                user_id : Id,
+                user_pwd : Pwd
+            }
             result.code = 200
             result.message = "success"
             return res.json(result)

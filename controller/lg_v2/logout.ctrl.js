@@ -1,8 +1,8 @@
 
 
 const logout = (req, res) => {
-
-    req.session.destroy()
+    sessionStore.user_id = ''
+    console.log(sessionStore)
     const result = {
         code:200,
         message:"success"

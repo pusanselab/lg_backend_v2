@@ -61,12 +61,13 @@ function IsEmpty(v) {
     } else return v === undefined || v === '' || v === null
 }
 
-module.exports = (db, app, appRoot, express) => {
+module.exports = (db, app, appRoot, express, sessionStore) => {
     global.serverkey = "AAAAVZL-m2w:APA91bEknMJSA2w_eo2Kbz4f_RdHjVx9IXqHqhCLohNx_OWHPF8bbopHCu3gGa4lpOLS99emK2ctvsGCKWzWSg-yPiNBIhA1MsfpwmcF8xbrUQxYmuHWr-iSix85CpmwG-QMOufGj85V"
     global.db = db
     global.app = app
     global.appRoot = appRoot
     global.express = express
+    global.sessionStore = sessionStore
     global.ErrForm = ErrForm
     global.IsEmpty = IsEmpty
     global.Pageable = Pageable
