@@ -229,6 +229,8 @@ const overview = (req, res) => {
                                                                                 }).then(counter => {
                                                                                     result.content.db_usage = (counter.dataValues.count / 1000000000).toFixed(10)
 
+                                                                                    result.code = 200
+                                                                                    result.message = "success"
                                                                                     return res.json(result)
 
                                                                                 })
