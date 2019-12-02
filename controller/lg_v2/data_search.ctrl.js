@@ -5,10 +5,12 @@ const data_search_id = (req, res) => {
     const result = {}
     db.Header.findByPk(uid).then(header => {
         if (header) {
+            result.code = 200
             result.message = "success"
             result.content = header
             return res.json(result)
         } else
+            result.code = 400
             result.message = "fail"
         result.content = header
         return res.json(result)
