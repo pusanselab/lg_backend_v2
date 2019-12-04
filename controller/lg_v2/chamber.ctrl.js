@@ -11,7 +11,7 @@ const recent_test = (req, res) => {
         order: [
             ['lgmv_date', 'DESC']
         ],
-        limit: 5
+        limit: 5    // 최근 5개의 시험만 가져온다.
     }).then(async header => {
         if (header.length == null) {
             result.code = 400
@@ -65,7 +65,7 @@ const chamber_testroom_number = (req, res) => {
             return res.json(result)
         } else {
 
-            for(var i = 0 ; i < header.length ; i++){
+            for(var i = 0 ; i < header.length ; i++){  // 6개월 이하의 데이터만 가져오기 위한 로직
                 var data_date = header[i].dataValues.conn_file_date;
                 data_date = data_date.replace(/\./g,'-')
                 var between = moment(date).diff(data_date, "month")
@@ -111,7 +111,7 @@ const chamber_status = (req, res) => {
             return res.json(result)
         } else {
 
-            for(var i = 0 ; i < header.length ; i++){
+            for(var i = 0 ; i < header.length ; i++){    // 6개월 이하의 데이터만 가져오기 위한 로직
                 var data_date = header[i].dataValues.conn_file_date;
                 data_date = data_date.replace(/\./g,'-')
                 var between = moment(date).diff(data_date, "month")
