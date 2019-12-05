@@ -6,7 +6,7 @@ const express = require('express')
 const cookieParser = require('cookie-parser')
 const global = require('./helpers/global_helper')
 const sessionStore = {
-
+    user_id:[]
 }
 
 const app = express()

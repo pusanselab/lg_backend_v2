@@ -15,7 +15,10 @@ const login = (req, res) => {
             result.message = "failure"
             return res.json(result)
         } else if (user.pwd === Pwd) {
-            sessionStore.user_id = Id
+            sessionStore.user_id.push(Id)
+            sessionStore.user_id = sessionStore.user_id.filter( (item, idx, array) => {
+                return array.indexOf( item ) === idx ;
+            });
             console.log(sessionStore)
             result.user_info = {
                 user_id : Id,
