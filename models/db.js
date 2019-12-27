@@ -39,7 +39,8 @@ const db = {
     Raw_3001_3500: require('./raw_3001_3500.model')(Sequelize, sequelize),
     Raw_3501_4000: require('./raw_3501_4000.model')(Sequelize, sequelize),
     Raw_4001_4500: require('./raw_4001_4500.model')(Sequelize, sequelize),
-    Raw_4501_5000: require('./raw_4501_5000.model')(Sequelize, sequelize)
+    Raw_4501_5000: require('./raw_4501_5000.model')(Sequelize, sequelize),
+    Logger: require('./logger.model')(Sequelize, sequelize)
 }
 
 db.Header.hasMany(db.Raw_0000_0500, {foreignKey: 'header_uid', constraints: false, sourceKey: 'header_uid', onDelete: 'cascade'})

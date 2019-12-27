@@ -3,7 +3,7 @@ const admin_ctrl = require('./admin.ctrl')
 const data_search_ctrl = require('./data_search.ctrl')
 const graph_ctrl = require('./graph.ctrl')
 const session_ctrl = require('./session.ctrl')
-// const data_search_ctrl = require('./data_search.ctrl')
+const logger_ctrl = require('./logger.ctrl')
 // 종성 컨트롤러
 const overview_ctrl = require('./overview.ctrl')
 const login_ctrl = require('./login.ctrl')
@@ -28,8 +28,8 @@ router.post('/similar_test', data_search_ctrl.similar_test)
 router.post('/graph/items',graph_ctrl.get_item_list)
 router.post('/graph/raws', graph_ctrl.get_raw_list)
 router.post('/check_admin', admin_ctrl.check_admin_password)
-
-
+router.post('/save_logger', logger_ctrl.save_logger)
+router.get('/get_logger', logger_ctrl.get_logger)
 
 
 

@@ -227,7 +227,8 @@ const overview = (req, res) => {
                                                                                         [sequelize.fn('count', sequelize.col('rawUid')), 'count']
                                                                                     ]
                                                                                 }).then(counter => {
-                                                                                    result.content.db_usage = (counter.dataValues.count / 1000000000).toFixed(10)
+                                                                                    console.log(counter)
+                                                                                    result.content.db_usage = (counter.dataValues.count / 10000000).toFixed(10)
 
                                                                                     result.code = 200
                                                                                     result.message = "success"
