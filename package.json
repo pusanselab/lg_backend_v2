@@ -23,7 +23,7 @@
     "morgan": "~1.9.0",
     "mysql2": "^1.6.1",
     "request": "^2.88.0",
-    "sequelize": "^4.39.0",
+    "sequelize": "^5.15.1",
     "thumbnail": "^0.1.9",
     "webp-converter": "^2.1.6",
     "zlib": "^1.0.5"
